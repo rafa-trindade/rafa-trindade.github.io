@@ -108,8 +108,13 @@ img {
   max-width: 100%;
 }
 
+.project-badges {
+  text-align: right !important;
+  overflow-x: auto;
+  margin-top: -38px; 
+  padding: 0 15px;
+}
 
-/* Alinhamentos */
 .right { text-align: right; }
 .center { text-align: center; }
 .justify { text-align: justify; }
@@ -117,6 +122,11 @@ img {
 
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
 
   /* Container empilha sidebar e content */
   .container {
@@ -126,24 +136,21 @@ img {
 
   /* Sidebar fixa no topo e ocupa 100% */
   .sidebar {
-    width: 100%;
-    max-width: none;
-    position: relative; /* remove sticky */
-    top: auto;
+    width: 100%; 
+    max-width: 100%;
     padding: 15px 20px;
+    position: relative;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* centraliza conteúdo interno */
+    align-items: center;
   }
 
-  /* Avatar menor */
   .sidebar .avatar img {
     width: 180px;
     height: auto;
   }
 
-  /* Ajuste dos badges no sidebar */
   .skills-badges {
     justify-content: center;
     flex-wrap: wrap;
@@ -154,28 +161,37 @@ img {
     margin-bottom: 6px;
   }
 
-  /* Conteúdo principal ocupa 100% */
   .content {
-    width: 100%;
+    width: 100%; 
     max-width: 100%;
-    padding: 20px;
+    padding: 15px 20px;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    overflow-x: hidden; /* página não terá scroll horizontal */
+    overflow-x: hidden;
   }
 
-  /* Faz com que apenas elementos largos dentro do content tenham scroll horizontal */
   .content > * {
     max-width: 100%;
     overflow-x: auto;
   }
 
-  /* Ajuste badges right e center */
-  .right, .center.spacer {
-    text-align: center;
-    overflow-x: auto; /* scroll horizontal se necessário */
-  }
+.right, .center.spacer {
+  text-align: center;
+  overflow-x: auto;
+}
+
+.project-badges {
+  text-align: right !important;
+  overflow-x: auto;
+  margin-top: -38px; 
+  padding: 0 30px;
+}
+
+.project-badges img {
+  max-width: none;
+  margin: 0 3px;
+}
 
   .right img, .center.spacer img {
     max-width: 90%;
@@ -183,28 +199,25 @@ img {
     margin: 4px;
   }
 
-  /* Mantém scroll horizontal apenas em códigos longos */
   pre {
     width: 100%;
     box-sizing: border-box;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* suaviza scroll no mobile */
+    -webkit-overflow-scrolling: touch; 
     margin: 10px 0;
   }
 
   pre code {
     display: block;
-    white-space: pre; /* mantém formatação */
-    font-size: 13px; /* fonte menor para caber melhor */
+    white-space: pre; 
+    font-size: 13px; 
   }
 
-  /* Ajusta divs justificadas */
   .justify.spacer {
     text-align: justify;
     width: 100%;
   }
 
-  /* Ajusta tabelas de projetos */
   table {
     width: 100% !important;
     table-layout: auto;
