@@ -69,7 +69,8 @@
 .content {
   flex-grow: 1;
   padding: 40px;
-  max-width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;  /* centraliza horizontal */
 }
 
 /* ===== Tema Escuro ===== */
