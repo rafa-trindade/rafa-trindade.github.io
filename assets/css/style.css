@@ -128,13 +128,13 @@ img {
   .sidebar {
     width: 100%;
     max-width: none;
-    position: relative; 
+    position: relative; /* remove sticky */
     top: auto;
     padding: 15px 20px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center; /* centraliza conteúdo interno */
   }
 
   /* Avatar menor */
@@ -154,29 +154,27 @@ img {
     margin-bottom: 6px;
   }
 
-  /* Conteúdo principal */
+  /* Conteúdo principal ocupa 100% */
   .content {
-    width: 100vw;     
+    width: 100%;
     max-width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    box-sizing: border-box; 
-    overflow-x: visible;    
+    align-items: stretch;
+    overflow-x: hidden; /* página não terá scroll horizontal */
   }
 
+  /* Faz com que apenas elementos largos dentro do content tenham scroll horizontal */
   .content > * {
-    width: 100%;
     max-width: 100%;
     overflow-x: auto;
-    box-sizing: border-box;
   }
 
-
+  /* Ajuste badges right e center */
   .right, .center.spacer {
     text-align: center;
-    overflow-x: auto; 
+    overflow-x: auto; /* scroll horizontal se necessário */
   }
 
   .right img, .center.spacer img {
@@ -185,28 +183,28 @@ img {
     margin: 4px;
   }
 
-
+  /* Mantém scroll horizontal apenas em códigos longos */
   pre {
     width: 100%;
     box-sizing: border-box;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; 
+    -webkit-overflow-scrolling: touch; /* suaviza scroll no mobile */
     margin: 10px 0;
   }
 
   pre code {
     display: block;
-    white-space: pre; 
-    font-size: 13px;  
+    white-space: pre; /* mantém formatação */
+    font-size: 13px; /* fonte menor para caber melhor */
   }
 
   /* Ajusta divs justificadas */
   .justify.spacer {
     text-align: justify;
     width: 100%;
-    box-sizing: border-box;
   }
 
+  /* Ajusta tabelas de projetos */
   table {
     width: 100% !important;
     table-layout: auto;
