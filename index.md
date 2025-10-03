@@ -8,6 +8,7 @@ title: Rafael Trindade
 <div align="right">
 
 [![Linkedin Badge](https://img.shields.io/badge/-in/rafatrindade-2B5482?style=flat-square&logo=LinkedIn&logoColor=fffff&link=https://www.linkedin.com/in/rafatrindade/)](https://www.linkedin.com/in/rafatrindade/)
+
 [![Gmail Badge](https://img.shields.io/badge/-rafatrindade.exe@gmail.com-2B5482?style=flat-square&logo=Gmail&logoColor=fff&link=mailto:rafatrindade.exe@gmail.com)](mailto:rafatrindade.exe@gmail.com)
 
 </div>
@@ -44,7 +45,7 @@ Sólida experiência em gestão financeira e operacional, incluindo o desenvolvi
 
 </br>
 
-<div align="center">
+
 
 ![Gestão](https://img.shields.io/badge/-Gestão-2B5482?style=flat-square)
 ![Business Intelligence](https://img.shields.io/badge/-Business%20Intelligence-2B5482?style=flat-square)
@@ -55,7 +56,6 @@ Sólida experiência em gestão financeira e operacional, incluindo o desenvolvi
 ![Observability](https://img.shields.io/badge/-Observability-2B5482?style=flat-square)
 ![Process Optimization](https://img.shields.io/badge/-Process%20Optimization-2B5482?style=flat-square)
 
-</div>
 
 ```python
 @dataclass
