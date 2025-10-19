@@ -123,6 +123,13 @@ img {
   padding: 0 15px;
 }
 
+.project-badges-screen {
+  text-align: right !important;
+  overflow-x: auto;
+  margin-top: -40px;
+  padding: 0 12px;
+}
+
 .right {
   text-align: right;
 }
@@ -209,10 +216,13 @@ img {
     padding: 0 30px;
   }
 
-  .project-badges img {
-    max-width: none;
-    margin: 0 3px;
+  .project-badges-screen {
+    text-align: right !important;
+    overflow-x: auto;
+    margin-top: -41px;
+    padding: 0 31px;
   }
+
 
   .right img,
   .center.spacer img {
