@@ -102,7 +102,9 @@ code {
   font-size: 14px;
 }
 
-
+img[src*="img.shields.io"] {
+  border-radius: 6px;
+}
 
 /* Para o highlight.js não sobrescrever */
 .hljs {
