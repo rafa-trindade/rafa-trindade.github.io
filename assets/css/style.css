@@ -207,6 +207,8 @@ img {
   .center.spacer {
     text-align: center;
     overflow-x: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .project-badges {
