@@ -118,7 +118,7 @@ img {
 
 .project-badges {
   position: absolute;
-  bottom: 8px;
+  bottom: 3px;
   right: 8px;
   display: flex;
   gap: 6px;
@@ -126,7 +126,7 @@ img {
 
 .project-badges-screen {
   position: absolute;
-  bottom: 8px;
+  bottom: 0px;
   right: 8px;
   display: flex;
   gap: 6px;
@@ -173,7 +173,7 @@ img {
 }
 
 .project-grid {
-  width:100%;
+  width:95%;
   border-collapse: collapse;
   border: none;
   margin-bottom: 6px 0 6px 0;
@@ -184,7 +184,7 @@ img {
   width: 33.33%; /* divide igualmente em 3 colunas */
   vertical-align: top;
   border: none;
-  padding: 8px 8px 4px 8px; /* espaçamento interno apenas entre as células */
+  padding: 8px 6px 4px 8px; /* espaçamento interno apenas entre as células */
 }
 
 /* remove o padding nas bordas externas */
@@ -200,6 +200,42 @@ img {
 .project-grid td:last-child {
   padding-right: 0;
 }
+
+  /* remove espaço do último item */
+  .project-grid tr:last-child td:last-child {
+    padding-bottom: 0 !important;
+  }
+
+  /* neutraliza o width="33%" no HTML */
+  .project-grid td[width],
+  .project-grid [width] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Garante que apenas as imagens principais dos projetos fiquem 100% */
+  .project-grid td > div > a > img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* Garante 100% real das imagens internas, sem causar overflow */
+  .project-grid td > div > a > img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 5px !important;
+  }
+
+  /* Corrige possíveis pixels extras de margem vertical */
+  .project-grid td > div {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
 
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
