@@ -117,17 +117,19 @@ img {
 }
 
 .project-badges {
-  text-align: right !important;
-  overflow-x: auto;
-  margin-top: -35px;
-  padding: 0 8px;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  gap: 6px;
 }
 
 .project-badges-screen {
-  text-align: right !important;
-  overflow-x: auto;
-  margin-top: -41px;
-  padding: 0 8px;
+  position: absolute;
+  bottom: 14.5px;
+  right: 8px;
+  display: flex;
+  gap: 6px;
 }
 
 .right {
@@ -147,21 +149,21 @@ img {
   margin-bottom: 20px;
 }
 
-  .activity-graph {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
-    text-align: center;
-    margin-top: 6px;
-  }
+.activity-graph {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  text-align: center;
+  margin-top: 6px;
+}
 
-  .activity-graph img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    display: block;
-    margin-top: 12px;
-  }
+.activity-graph img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin-top: 12px;
+}
 
 .separador {
   border: none;
@@ -171,7 +173,7 @@ img {
 }
 
 .project-grid {
-  width: 100%;
+  width:100%;
   border-collapse: collapse;
   border: none;
   margin-bottom: 6px 0 6px 0;
@@ -282,17 +284,19 @@ img {
   }
 
   .project-badges {
-    text-align: right !important;
-    overflow-x: auto;
-    margin-top: -38px;
-    padding: 0 15px;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: flex;
+    gap: 0.3px;
   }
 
   .project-badges-screen {
-    text-align: right !important;
-    overflow-x: auto;
-    margin-top: -38px;
-    padding: 0 15px;
+    position: absolute;
+    bottom: 3px;
+    right: 6px;
+    display: flex;
+    gap: 0.1px;
   }
 
 
