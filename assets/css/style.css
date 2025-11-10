@@ -263,23 +263,7 @@ img {
     align-items: center;
   }
 
-  .sidebar h2 {
-    margin: 10px 0 0 0;
-    color: #ffffff;
-  }
 
-  .sidebar p {
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 5px;
-
-    color: #8b949e;
-  }
-
-  .separador {
-    display: none; /* esconde em telas pequenas */
-  }
 
   .sidebar .avatar img {
     width: 180px;
