@@ -126,7 +126,7 @@ img {
 
 .project-badges-screen {
   position: absolute;
-  bottom: 14.5px;
+  bottom: 8px;
   right: 8px;
   display: flex;
   gap: 6px;
@@ -293,8 +293,8 @@ img {
 
   .project-badges-screen {
     position: absolute;
-    bottom: 3px;
-    right: 6px;
+    bottom: 2px;
+    right: 11px;
     display: flex;
     gap: 0.1px;
   }
