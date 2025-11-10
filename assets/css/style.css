@@ -119,15 +119,15 @@ img {
 .project-badges {
   text-align: right !important;
   overflow-x: auto;
-  margin-top: -38px;
-  padding: 0 15px;
+  margin-top: -35px;
+  padding: 0 8px;
 }
 
 .project-badges-screen {
   text-align: right !important;
   overflow-x: auto;
-  margin-top: -46px;
-  padding: 0 12px;
+  margin-top: -41px;
+  padding: 0 8px;
 }
 
 .right {
@@ -147,11 +147,56 @@ img {
   margin-bottom: 20px;
 }
 
+  .activity-graph {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    text-align: center;
+    margin-top: 6px;
+  }
+
+  .activity-graph img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin-top: 12px;
+  }
+
 .separador {
   border: none;
   border-top: 1px solid rgba(139, 148, 158, 0.3); /* mesma cor, mas com 30% de opacidade */
   margin: 15px 0;
   width: 100%;
+}
+
+.project-grid {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  margin-bottom: 6px 0 6px 0;
+  table-layout: fixed; /* força colunas de largura igual */
+}
+
+.project-grid td {
+  width: 33.33%; /* divide igualmente em 3 colunas */
+  vertical-align: top;
+  border: none;
+  padding: 8px 8px 12px 8px; /* espaçamento interno apenas entre as células */
+}
+
+/* remove o padding nas bordas externas */
+.project-grid tr:first-child td {
+  padding-top: 0;
+}
+.project-grid tr:last-child td {
+  padding-bottom: 0;
+}
+.project-grid td:first-child {
+  padding-left: 0;
+}
+.project-grid td:last-child {
+  padding-right: 0;
 }
 
 /* ===== Responsividade para telas pequenas ===== */
@@ -240,14 +285,14 @@ img {
     text-align: right !important;
     overflow-x: auto;
     margin-top: -38px;
-    padding: 0 30px;
+    padding: 0 15px;
   }
 
   .project-badges-screen {
     text-align: right !important;
     overflow-x: auto;
-    margin-top: -41px;
-    padding: 0 31px;
+    margin-top: -38px;
+    padding: 0 15px;
   }
 
 
@@ -302,6 +347,7 @@ img {
     max-width: 100%;
     overflow-x: auto;
     text-align: center;
+    margin-top: 6px;
   }
 
   .activity-graph img {
@@ -309,6 +355,68 @@ img {
     height: auto;
     max-width: 100%;
     display: block;
+    margin-top: 12px;
+
+  }
+
+    /* ==== Tabela de projetos responsiva ==== */
+  .project-grid {
+    width: 100% !important;
+    margin: 6px 0 6px 0;
+  }
+
+  .project-grid tr {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .project-grid td {
+    display: block !important;
+    width: 100% !important;
+    border: none !important;
+    padding: 0 0 16px 0 !important; /* 8px de espaço vertical entre blocos */
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* remove espaço do último item */
+  .project-grid tr:last-child td:last-child {
+    padding-bottom: 0 !important;
+  }
+
+  /* neutraliza o width="33%" no HTML */
+  .project-grid td[width],
+  .project-grid [width] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Garante que apenas as imagens principais dos projetos fiquem 100% */
+  .project-grid td > div > a > img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  /* Garante 100% real das imagens internas, sem causar overflow */
+  .project-grid td > div > a > img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto 8px auto !important; /* mantém seu espaçamento */
+    border-radius: 5px !important;
+  }
+
+  /* Corrige possíveis pixels extras de margem vertical */
+  .project-grid td > div {
+    position: relative !important;
+    width: 100% !important;
+    margin: 0 auto !important;
   }
 
 }
