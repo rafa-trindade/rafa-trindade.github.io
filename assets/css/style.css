@@ -387,7 +387,7 @@ img {
     max-width: 100%;
     overflow-x: auto;
     text-align: center;
-    margin-top: 6px;
+    margin-top: 3px;
   }
 
   .activity-graph img {
@@ -395,7 +395,7 @@ img {
     height: auto;
     max-width: 100%;
     display: block;
-    margin-top: 12px;
+    margin-top: 1px;
 
   }
 
