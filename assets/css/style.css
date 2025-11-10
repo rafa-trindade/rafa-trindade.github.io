@@ -13,7 +13,7 @@
   height: 100vh;
   overflow-y: auto;
   /* adiciona scroll interno se necessário */
-  width: 300px;
+  width: 380px;
   background-color: #161b22;
   padding: 20px;
   flex-shrink: 0;
@@ -39,8 +39,8 @@
 .sidebar p {
   font-size: 14px;
   text-align: center;
-  margin-bottom: 10px;
-  margin-top: 5px;
+  margin-bottom: -6px;
+  margin-top: 2px;
 
   color: #8b949e;
 }
@@ -65,7 +65,7 @@
 /* ===== Conteúdo principal ===== */
 .content {
   flex-grow: 1;
-  padding: 40px;
+  padding: 20px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -147,6 +147,13 @@ img {
   margin-bottom: 20px;
 }
 
+.separador {
+  border: none;
+  border-top: 1px solid rgba(139, 148, 158, 0.3); /* mesma cor, mas com 30% de opacidade */
+  margin: 15px 0;
+  width: 100%;
+}
+
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
 
@@ -171,6 +178,24 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .sidebar h2 {
+    margin: 10px 0 0 0;
+    color: #ffffff;
+  }
+
+  .sidebar p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+    color: #8b949e;
+  }
+
+  .separador {
+    display: none; /* esconde em telas pequenas */
   }
 
   .sidebar .avatar img {
