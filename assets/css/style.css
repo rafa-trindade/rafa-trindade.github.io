@@ -184,7 +184,7 @@ img {
   width: 33.33%; /* divide igualmente em 3 colunas */
   vertical-align: top;
   border: none;
-  padding: 8px 8px 12px 8px; /* espaçamento interno apenas entre as células */
+  padding: 8px 8px 4px 8px; /* espaçamento interno apenas entre as células */
 }
 
 /* remove o padding nas bordas externas */
