@@ -146,6 +146,10 @@ img {
   text-align: right;
 }
 
+.right img{
+  margin-bottom: -10px;
+}
+
 .center {
   text-align: center;
 }
