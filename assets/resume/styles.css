@@ -7,15 +7,15 @@
 :root {
     /* Dark Mode (Default) */
     --bg-primary: #0f1419;
-    --bg-secondary: #1a1f2e;
+    --bg-secondary: #161b22;
     --bg-tertiary: #2d3748;
     --text-primary: #e5e7eb;
     --text-secondary: #cbd5e1;
     --text-muted: #94a3b8;
     --accent: #4f87c8;
     --accent-light: #60a5fa;
-    --border: #2d3748;
-    --card-bg: #1a1f2e;
+    --border: #232a37;
+    --card-bg: #161b22;
 }
 
 body.light-theme {
@@ -151,6 +151,11 @@ main {
 }
 
 .contact-item {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-item {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -179,6 +184,7 @@ main {
 .section-text {
     color: var(--text-primary);
     line-height: 1.8;
+    text-align: justify;
 }
 
 /* Skills */
@@ -186,6 +192,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    align-items: center;
+    justify-content: center;
 }
 
 .skill-badge {
@@ -218,6 +226,7 @@ main {
     transition: border-color 0.2s ease;
 }
 
+
 .project-card:hover {
     border-color: rgba(59, 130, 246, 0.5);
 }
@@ -234,6 +243,7 @@ main {
     color: var(--text-primary);
     margin-bottom: 16px;
     line-height: 1.7;
+    text-align: justify;
 }
 
 .tech-tags {
@@ -300,6 +310,7 @@ main {
     font-size: 14px;
     color: var(--text-primary);
     line-height: 1.7;
+    text-align: justify;
 }
 
 /* Education */
@@ -429,6 +440,7 @@ main {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
