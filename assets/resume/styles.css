@@ -187,6 +187,12 @@ main {
     text-align: justify;
 }
 
+.section-text2 {
+    color: #8b949e;
+    line-height: 1.8;
+    text-align: justify;
+}
+
 /* Skills */
 .skills-grid {
     display: flex;
@@ -239,7 +245,7 @@ main {
 
 .project-description {
     font-size: 14px;
-    color: var(--text-primary);
+    color: #8b949e;
     margin-bottom: 16px;
     line-height: 1.7;
     text-align: justify;
@@ -254,7 +260,7 @@ main {
 .tech-tag {
     padding: 4px 12px;
     background-color: var(--bg-tertiary);
-    color: var(--text-secondary);
+    color: var(--text-primary);
     border-radius: 4px;
     font-size: 12px;
     font-weight: 500;
@@ -296,18 +302,18 @@ main {
 
 .experience-period {
     font-size: 13px;
-    color: var(--text-muted);
+    color: var(--text-primary);
 }
 
 .experience-company {
     font-size: 13px;
-    color: var(--text-muted);
+    color: var(--text-primary);
     margin-bottom: 8px;
 }
 
 .experience-description {
     font-size: 14px;
-    color: var(--text-primary);
+    color: #8b949e;
     line-height: 1.7;
     text-align: justify;
 }
@@ -349,12 +355,12 @@ main {
 
 .education-period {
     font-size: 13px;
-    color: var(--text-muted);
+    color: var(--text-primary);
 }
 
 .education-institution {
     font-size: 13px;
-    color: var(--text-muted);
+    color: var(--text-primary);
     margin-bottom: 8px;
 }
 
@@ -403,12 +409,12 @@ main {
 
 .certification-year {
     font-size: 13px;
-    color: var(--text-muted);
+    color: var(--text-primary);
 }
 
 .certification-provider {
     font-size: 13px;
-    color: var(--text-muted);
+    color: var(--text-primary);
     margin-bottom: 12px;
 }
 
@@ -421,7 +427,7 @@ main {
 
 .certification-courses li {
     font-size: 13px;
-    color: var(--text-primary);
+    color: #8b949e;
     padding-left: 16px;
     position: relative;
 }
