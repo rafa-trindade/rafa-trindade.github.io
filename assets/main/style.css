@@ -42,7 +42,7 @@
   margin-bottom: -6px;
   margin-top: 2px;
 
-  color: #94a3b8;
+  color: #8b949e;
 }
 
 .sidebar .contact-links a {
@@ -60,6 +60,30 @@
 .skills-badges img {
   height: 22px;
   border-radius: 10px;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: -9px;
+  margin-bottom: -10px;
+}
+
+.header-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.header-icon:hover {
+  background-color: #355A83;
 }
 
 /* ===== Conteúdo principal ===== */
@@ -89,7 +113,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #e5e7eb;
+  color: #ffffff;
 }
 
 pre,
@@ -107,8 +131,8 @@ code {
   border-radius: 6px;
   padding: 10px;
   display: flex;
-  justify-content: center; 
-  align-items: center;      
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -143,31 +167,12 @@ img {
 }
 
 .right {
-    text-align: right;
-    justify-content: flex-end;
-    display: flex;
-    gap: 3px;
-    align-items: center;
-    margin-bottom: -10px;
-    margin-top: -10px;
+  text-align: right;
 }
 
-.header-icon {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #e5e7eb;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.2s ease;
+.right img {
+  margin-bottom: -7px;
 }
-
-.header-icon:hover {
-    background-color: #355A83;
-}
-
 
 .center {
   text-align: center;
@@ -200,75 +205,82 @@ img {
 
 .separador {
   border: none;
-  border-top: 1px solid rgba(139, 148, 158, 0.3); /* mesma cor, mas com 30% de opacidade */
+  border-top: 1px solid rgba(139, 148, 158, 0.3);
+  /* mesma cor, mas com 30% de opacidade */
   margin: 15px 0;
   width: 100%;
 }
 
 .project-grid {
-  width:95%;
+  width: 95%;
   border-collapse: collapse;
   border: none;
   margin-bottom: 6px 0 6px 0;
-  table-layout: fixed; /* força colunas de largura igual */
+  table-layout: fixed;
+  /* força colunas de largura igual */
 }
 
 .project-grid td {
-  width: 33.33%; /* divide igualmente em 3 colunas */
+  width: 33.33%;
+  /* divide igualmente em 3 colunas */
   vertical-align: top;
   border: none;
-  padding: 8px 6px 4px 8px; /* espaçamento interno apenas entre as células */
+  padding: 8px 6px 4px 8px;
+  /* espaçamento interno apenas entre as células */
 }
 
 /* remove o padding nas bordas externas */
 .project-grid tr:first-child td {
   padding-top: 0;
 }
+
 .project-grid tr:last-child td {
   padding-bottom: 0;
 }
+
 .project-grid td:first-child {
   padding-left: 0;
 }
+
 .project-grid td:last-child {
   padding-right: 0;
 }
 
-  /* remove espaço do último item */
-  .project-grid tr:last-child td:last-child {
-    padding-bottom: 0 !important;
-  }
+/* remove espaço do último item */
+.project-grid tr:last-child td:last-child {
+  padding-bottom: 0 !important;
+}
 
-  /* neutraliza o width="33%" no HTML */
-  .project-grid td[width],
-  .project-grid [width] {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
+/* neutraliza o width="33%" no HTML */
+.project-grid td[width],
+.project-grid [width] {
+  width: 100% !important;
+  max-width: 100% !important;
+}
 
-  /* Garante que apenas as imagens principais dos projetos fiquem 100% */
-  .project-grid td > div > a > img {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
-  }
+/* Garante que apenas as imagens principais dos projetos fiquem 100% */
+.project-grid td>div>a>img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
 
-  /* Garante 100% real das imagens internas, sem causar overflow */
-  .project-grid td > div > a > img {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    border-radius: 5px !important;
-  }
+/* Garante 100% real das imagens internas, sem causar overflow */
+.project-grid td>div>a>img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 5px !important;
+}
 
-  /* Corrige possíveis pixels extras de margem vertical */
-  .project-grid td > div {
-    position: relative !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-  }
+/* Corrige possíveis pixels extras de margem vertical */
+.project-grid td>div {
+  position: relative !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
 
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
@@ -304,19 +316,22 @@ img {
   .skills-badges {
     justify-content: center;
     flex-wrap: wrap;
+    gap: 8px;
   }
 
   .skills-badges img {
     height: auto;
-    margin-bottom: 6px;
   }
 
-  .right {
-    justify-content: center;
-    display: flex;
-    gap: 3px;
-    align-items: center;
-}
+
+  .separador {
+    border: none;
+    border-top: 1px solid rgba(139, 148, 158, 0.3);
+    /* mesma cor, mas com 30% de opacidade */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
 
   .content {
     width: 100%;
@@ -357,7 +372,7 @@ img {
   }
 
   .project-badges-screen a {
-    margin-right: -10px; 
+    margin-right: -10px;
   }
 
 
@@ -424,7 +439,7 @@ img {
 
   }
 
-    /* ==== Tabela de projetos responsiva ==== */
+  /* ==== Tabela de projetos responsiva ==== */
   .project-grid {
     width: 100% !important;
     margin: 6px 0 6px 0;
@@ -442,7 +457,8 @@ img {
     display: block !important;
     width: 100% !important;
     border: none !important;
-    padding: 0 0 16px 0 !important; /* 8px de espaço vertical entre blocos */
+    padding: 0 0 16px 0 !important;
+    /* 8px de espaço vertical entre blocos */
     margin: 0 !important;
     box-sizing: border-box !important;
   }
@@ -460,7 +476,7 @@ img {
   }
 
   /* Garante que apenas as imagens principais dos projetos fiquem 100% */
-  .project-grid td > div > a > img {
+  .project-grid td>div>a>img {
     width: 100% !important;
     height: auto !important;
     display: block !important;
@@ -468,17 +484,18 @@ img {
   }
 
   /* Garante 100% real das imagens internas, sem causar overflow */
-  .project-grid td > div > a > img {
+  .project-grid td>div>a>img {
     display: block !important;
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
-    margin: 0 auto 8px auto !important; /* mantém seu espaçamento */
+    margin: 0 auto 8px auto !important;
+    /* mantém seu espaçamento */
     border-radius: 5px !important;
   }
 
   /* Corrige possíveis pixels extras de margem vertical */
-  .project-grid td > div {
+  .project-grid td>div {
     position: relative !important;
     width: 100% !important;
     margin: 0 auto !important;
