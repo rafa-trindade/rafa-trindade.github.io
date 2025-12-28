@@ -118,14 +118,13 @@ class AboutMe:
     profession: str = "Data & Analytics Professional"
     preferred_tech_stack: List[str] = field(
         default_factory=lambda: [
-            "Power BI", "SQL", "Python", "dbt", 
-            "Snowflake", "Databricks", "Airflow",
+            "Python", "PySpark", "SQL", "DBT", 
+            "DuckDB", "ETL/ELT", "Apache Airflow",
             "Terraform", "Docker", "Kubernetes"
         ]
     )
     applied_in: List[str] = field(
         default_factory=lambda: [
-            "Business Intelligence",
             "Analytics Engineering",
             "Data Engineering",
             "Workflow Automation"
