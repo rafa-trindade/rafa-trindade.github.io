@@ -187,6 +187,7 @@ img {
   margin-bottom: 20px;
 }
 
+
 .activity-graph {
   width: 100%;
   max-width: 100%;
@@ -355,6 +356,14 @@ img {
     overflow-x: auto;
     margin-top: 5px;
     margin-bottom: 5px;
+  }
+
+  .center.spacerr {
+    text-align: center;
+    overflow-x: auto;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-size: small;
   }
 
   .project-badges {
