@@ -212,6 +212,15 @@ img {
   width: 100%;
 }
 
+.separador2 {
+  border: none;
+  border-top: 4px solid rgba(139, 148, 158, 0.3);
+  /* mesma cor, mas com 30% de opacidade */
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
 .project-grid {
   width: 95%;
   border-collapse: collapse;

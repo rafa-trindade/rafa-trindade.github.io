@@ -216,17 +216,15 @@ class AboutMe:
 
 
       <pre><code class="python">@dataclass
-class Project:
-    name: str
-    description: str
-    technologies: List[str]
-
-@dataclass
 class Portfolio:
     projects: List[Project] = field(default_factory=list)
+    cases: List[Case] = field(default_factory=list)</code></pre>
 
-portfolio = Portfolio(
-    projects=[</code></pre>
+      <h1>
+        <code style="display: block; padding: 6px 12px;">
+          📦 Portfolio.projects[
+        </code>
+      </h1>
 
       <div align="center">
 
@@ -447,11 +445,64 @@ portfolio = Portfolio(
         </table>
       </div>
 
+      <!--
+      <h1>
+        <code>
+          ]
+        </code>
+      </h1>
+    -->
 
-      <pre><code class="python">    ]
-)</code></pre>
+      <h1>
+        <code style="display: block; padding: 6px 12px;">
+          📘 Portfolio.cases[
+      </code>
+      </h1>
 
 
+      <div align="center">
+
+
+        <table class="project-grid">
+
+          <!-- Linha 1 -->
+          <tr>
+
+            <td>
+              <div style="position: relative;">
+                <a href="https://github.com/rafa-trindade/RAFAEL_TRINDADE_DDF_TECH_122025" target="_blank">
+                  <img
+                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=RAFAEL_TRINDADE_DDF_TECH_122025&theme=github_dark_dimmed&show_owner=false&description_lines_count=4&bg_color=151B23" />
+                </a>
+                <div class="project-badges">
+                  <a href="https://github.com/rafa-trindade/RAFAEL_TRINDADE_DDF_TECH_122025" target="_blank">
+                    <img
+                      src="https://img.shields.io/badge/-Projeto-2B5482?style=flat&logo=github&logoColor=fff&labelColor=1D3557" />
+                  </a>
+                </div>
+              </div>
+            </td>
+
+            <td></td>
+
+            <td></td>
+
+          </tr>
+
+        </table>
+
+      </div>
+
+      <!--
+      <h1>
+        <code>
+          ]
+        </code>
+      </h1>
+    -->
+
+
+      <div class="separador2"></div>
 
 
       <div align="center">
@@ -576,6 +627,7 @@ portfolio = Portfolio(
         </table>
       </div>
 
+      <div class="separador2"></div>
 
 
       <div class="activity-graph">
