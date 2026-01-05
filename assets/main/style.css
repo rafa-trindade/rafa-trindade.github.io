@@ -417,8 +417,11 @@ img {
   }
 
   .section-code {
-    white-space: nowrap;
     overflow-x: auto;
+  }
+
+  h1 {
+    white-space: nowrap;
   }
 
   .justify.spacer {
