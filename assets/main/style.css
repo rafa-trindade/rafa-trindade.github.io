@@ -91,7 +91,7 @@
   flex-grow: 1;
   padding: 20px;
   max-width: 100%;
-  margin: 15px 0;
+  margin: 15px auto;
 }
 
 /* ===== Tema Escuro ===== */
@@ -297,10 +297,6 @@ img {
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
 
-  * {
-    outline: 1px solid red;
-  }
-
   *,
   *::before,
   *::after {
@@ -360,7 +356,10 @@ img {
     margin-top: 0;
   }
 
-
+  .content>* {
+    max-width: 100%;
+    overflow-x: auto;
+  }
 
   .right,
   .center.spacer {
@@ -394,7 +393,7 @@ img {
   }
 
   .project-badges-screen a {
-    margin-right: 0;
+    margin-right: -10px;
   }
 
 
