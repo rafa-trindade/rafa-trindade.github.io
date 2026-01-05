@@ -423,10 +423,11 @@ img {
 
   .section-code {
     overflow-x: auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 21.5px;
+    margin-bottom: 21.5px;
     white-space: nowrap;
   }
+
 
   .justify.spacer {
     text-align: justify;
