@@ -416,6 +416,12 @@ img {
     font-size: 13px;
   }
 
+  .section-code {
+    display: block;
+    white-space: normal;
+    word-break: break-word;
+  }
+
   .justify.spacer {
     text-align: justify;
     width: 100%;
