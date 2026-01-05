@@ -292,17 +292,9 @@ img {
   margin: 0 auto !important;
 }
 
-.section-code {
-  margin-top: 21.5px;
-  margin-bottom: 21.5px;
-}
 
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
-
-  .section-code {
-    overscroll-behavior-x: contain;
-  }
 
   *,
   *::before,
@@ -424,29 +416,6 @@ img {
     white-space: pre;
     font-size: 13px;
   }
-
-  .section-code {
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    /* scroll suave no iOS */
-  }
-
-  .section-code pre {
-    margin: 0;
-    width: max-content;
-    min-width: 100%;
-    overflow: visible;
-  }
-
-  .section-code pre code {
-    white-space: pre;
-    /* mantém formatação */
-    display: block;
-  }
-
 
   .justify.spacer {
     text-align: justify;
