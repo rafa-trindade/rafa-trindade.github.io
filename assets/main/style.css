@@ -218,6 +218,22 @@ img {
   width: 100%;
 }
 
+..separador3 {
+  border: none;
+  border-top: 1px solid rgba(139, 148, 158, 0.3);
+  /* mesma cor, mas com 30% de opacidade */
+  margin: 25px 0;
+  width: 100%;
+}
+
+  {
+  border: none;
+  border-top: 1px solid rgba(139, 148, 158, 0.3);
+  /* mesma cor, mas com 30% de opacidade */
+  margin: 25px 0;
+  width: 100%;
+}
+
 .project-grid {
   width: 95%;
   border-collapse: collapse;
@@ -349,6 +365,14 @@ img {
     width: 100%;
   }
 
+  .separador3 {
+    border: none;
+    border-top: 1px solid rgba(139, 148, 158, 0.3);
+    /* mesma cor, mas com 30% de opacidade */
+    margin: 25px 0 0;
+    width: 100%;
+  }
+
   .content {
     width: 100%;
     max-width: 100%;
@@ -424,7 +448,7 @@ img {
   }
 
   h1>code.python {
-    font-size: 13px !important;
+    font-size: 13.5px !important;
   }
 
   .justify.spacer {
