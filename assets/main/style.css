@@ -519,4 +519,8 @@ img {
     margin: 0 auto !important;
   }
 
+  * {
+    outline: 1px solid red;
+  }
+
 }
