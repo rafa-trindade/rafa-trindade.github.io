@@ -417,7 +417,8 @@ img {
   }
 
   .section-code {
-    white-space: pre;
+    white-space: nowrap;
+    overflow-x: auto;
   }
 
   .justify.spacer {
