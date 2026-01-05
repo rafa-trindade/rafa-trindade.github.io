@@ -218,15 +218,7 @@ img {
   width: 100%;
 }
 
-..separador3 {
-  border: none;
-  border-top: 1px solid rgba(139, 148, 158, 0.3);
-  /* mesma cor, mas com 30% de opacidade */
-  margin: 25px 0;
-  width: 100%;
-}
-
-  {
+.separador3 {
   border: none;
   border-top: 1px solid rgba(139, 148, 158, 0.3);
   /* mesma cor, mas com 30% de opacidade */
