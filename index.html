@@ -221,8 +221,8 @@ class AboutMe:
 
       <pre><code class="python">@dataclass
 class Portfolio:
-    projects: List[Project] = field(default_factory=list) # personal portfolio projects
-    cases: List[Case] = field(default_factory=list) # interview & hackathon case studies</code></pre>
+    projects: List[Project] = field(default_factory=list)
+    cases: List[Case] = field(default_factory=list)</code></pre>
 
       <h1>
         <code class="python section-code" style="display:block; padding:6px 12px; font-size:16px;">
@@ -230,7 +230,7 @@ class Portfolio:
           <span style="color:#D1A7FD; font-weight:500;">Portfolio</span
           ><span style="font-weight:500;">.projects[]</span>
           <span style="color:#8b949e; opacity:.6; font-weight:normal;">
-            # displayed below
+            # # personal portfolio projects
           </span>
         </code>
       </h1>
@@ -467,7 +467,7 @@ class Portfolio:
           <span style="color:#D1A7FD; font-weight:500;">Portfolio</span
           ><span style="font-weight:500;">.cases[]</span>
           <span style="color:#8b949e; opacity:.6; font-weight:normal;">
-            # displayed beloww
+            # interview & hackathon case studies
           </span>
         </code>
       </h1>
