@@ -300,6 +300,10 @@ img {
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
 
+  .section-code {
+    overscroll-behavior-x: contain;
+  }
+
   *,
   *::before,
   *::after {
@@ -422,10 +426,25 @@ img {
   }
 
   .section-code {
+    width: 100%;
+    max-width: 100%;
     overflow-x: auto;
-    margin-top: 21.5px;
-    margin-bottom: 21.5px;
-    white-space: nowrap;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    /* scroll suave no iOS */
+  }
+
+  .section-code pre {
+    margin: 0;
+    width: max-content;
+    min-width: 100%;
+    overflow: visible;
+  }
+
+  .section-code pre code {
+    white-space: pre;
+    /* mantém formatação */
+    display: block;
   }
 
 
