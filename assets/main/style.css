@@ -109,12 +109,7 @@ a:hover {
   text-decoration: underline;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: #ffffff;
-}
+
 
 pre,
 code {
@@ -123,7 +118,7 @@ code {
   border-radius: 6px;
   display: block;
   overflow-x: auto;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .badge-container {
@@ -415,6 +410,7 @@ img {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin: 10px 0;
+    font-size: 14px;
   }
 
   pre code {
@@ -422,6 +418,7 @@ img {
     white-space: pre;
     font-size: 13px;
   }
+
 
   .justify.spacer {
     text-align: justify;
