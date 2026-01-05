@@ -222,7 +222,7 @@ img {
 }
 
 .project-grid {
-  width: 100%;
+  width: 95%;
   border-collapse: collapse;
   border: none;
   margin-bottom: 6px 0 6px 0;
@@ -296,6 +296,10 @@ img {
 
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
+
+  * {
+    outline: 1px solid red;
+  }
 
   *,
   *::before,
@@ -517,10 +521,6 @@ img {
     position: relative !important;
     width: 100% !important;
     margin: 0 auto !important;
-  }
-
-  * {
-    outline: 1px solid red;
   }
 
 }
