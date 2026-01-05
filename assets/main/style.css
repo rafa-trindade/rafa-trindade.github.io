@@ -121,6 +121,10 @@ code {
   font-size: 15px;
 }
 
+h1>code.python {
+  font-size: 15px !important;
+}
+
 .badge-container {
   background-color: #141B23;
   border-radius: 6px;
@@ -419,6 +423,9 @@ img {
     font-size: 13px;
   }
 
+  h1>code.python {
+    font-size: 13px !important;
+  }
 
   .justify.spacer {
     text-align: justify;
