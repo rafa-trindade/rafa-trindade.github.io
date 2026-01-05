@@ -355,10 +355,6 @@ img {
     margin-top: 0;
   }
 
-  .content>* {
-    max-width: 100%;
-    overflow-x: auto;
-  }
 
   .right,
   .center.spacer {
@@ -392,7 +388,7 @@ img {
   }
 
   .project-badges-screen a {
-    margin-right: -10px;
+    margin-right: 0;
   }
 
 
