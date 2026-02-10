@@ -51,13 +51,16 @@
         <img src="https://img.shields.io/badge/-SQL-2B5482?style=flat-square" alt="SQL">
         <img src="https://img.shields.io/badge/-DBT-2B5482?style=flat-square" alt="DBT">
         <img src="https://img.shields.io/badge/-DuckDB-2B5482?style=flat-square" alt="DuckDB">
-        <img src="https://img.shields.io/badge/-ETL/ELT-2B5482?style=flat-square" alt="ETL/ELT">
+        <img src="https://img.shields.io/badge/-Airflow-2B5482?style=flat-square" alt="Airflow">
+        <img src="https://img.shields.io/badge/- Multi--Cloud-2B5482?style=flat-square" alt=" Multi-Cloud">
+
+
         <!--  
         <img src="https://img.shields.io/badge/-Snowflake-2B5482?style=flat-square" alt="Snowflake">
 
         <img src="https://img.shields.io/badge/-Databricks-2B5482?style=flat-square" alt="Databricks">
         -->
-        <img src="https://img.shields.io/badge/-Apache%20Airflow-2B5482?style=flat-square" alt="Airflow">
+
         <img src="https://img.shields.io/badge/-Terraform-2B5482?style=flat-square" alt="Terraform">
         <img src="https://img.shields.io/badge/-Docker-2B5482?style=flat-square" alt="Docker">
         <img src="https://img.shields.io/badge/-Kubernetes-2B5482?style=flat-square" alt="Kubernetes">
@@ -114,19 +117,29 @@
 
       <pre><code class="language-python">@dataclass
 class AboutMe:
+
     name: str = "Rafael Araujo Trindade"
-    profession: str = "Data & Analytics Professional"
+    profession: str = "Data Engineer Professional"
+
     preferred_tech_stack: List[str] = field(
         default_factory=lambda: [
             "Python", "PySpark", "SQL", "dbt", 
-            "DuckDB", "ETL/ELT", "Apache Airflow",
-            "Terraform", "Docker", "Kubernetes"
+            "DuckDB", "ETL/ELT", "Apache Airflow"
         ]
     )
+
+    platforms_and_cloud: List[str] = field(
+        default_factory=lambda: [
+            "OCI • AWS • GCP",
+            "Infrastructure as Code (Terraform)",
+            "Containerized Workloads (Docker / Kubernetes)"
+        ]
+    )
+
     applied_in: List[str] = field(
         default_factory=lambda: [
-            "Analytics Engineering",
             "Data Engineering",
+            "Analytics Engineering",
             "Workflow Automation"
         ]
     )</code></pre>
@@ -150,16 +163,18 @@ class AboutMe:
       </div>
 
       <div class=" center spacer">
-        <img src="https://img.shields.io/badge/-Analytics%20Engineering-2B5482?style=flat" alt="Analytics Engineering">
         <img src="https://img.shields.io/badge/-Data%20Engineering-2B5482?style=flat" alt="Data Engineering">
-        <img src="https://img.shields.io/badge/-Modern%20Data%20Stack-2B5482?style=flat" alt="Modern Data Stack">
+        <img src="https://img.shields.io/badge/-Analytics%20Engineering-2B5482?style=flat" alt="Analytics Engineering">
+        <img src="https://img.shields.io/badge/-Multi--Cloud%20(OCI%20•%20AWS%20•%20GCP)-2B5482?style=flat" />
+        <!-- <img src="https://img.shields.io/badge/-Modern%20Data%20Stack-2B5482?style=flat" alt="Modern Data Stack"> -->
         <img src="https://img.shields.io/badge/-Data%20Modeling-2B5482?style=flat" alt="Data Modeling">
         <img src="https://img.shields.io/badge/-Data%20Quality-2B5482?style=flat" alt="Data Quality">
-        <img src="https://img.shields.io/badge/-Policy%20as%20Code-2B5482?style=flat" alt="Policy as Code">
-        <img src="https://img.shields.io/badge/-Observability%20as%20Code-2B5482?style=flat"
-          alt="Observability as Code">
+        <img src="https://img.shields.io/badge/-Policy%20&%20Observability%20as%20Code-2B5482?style=flat"
+          alt="Policy as Code">
+        <!--
         <img src="https://img.shields.io/badge/-Data%20Contracts-2B5482?style=flat" alt="Data Contracts">
         <img src="https://img.shields.io/badge/-Process%20Optimization-2B5482?style=flat" alt="Process Optimization">
+      -->
       </div>
 
       <div class=" separador"></div>
@@ -421,12 +436,12 @@ class Portfolio:
 
             <td>
               <div style="position: relative;">
-                <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-core" target="_blank">
+                <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-core1" target="_blank">
                   <img
-                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=hackathon-pod-squad3-core&theme=github_dark_dimmed&show_owner=false&description_lines_count=2&bg_color=151B23" />
+                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=hackathon-pod-squad3-core1&theme=github_dark_dimmed&show_owner=false&description_lines_count=2&bg_color=151B23" />
                 </a>
                 <div class="project-badges">
-                  <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-core" target="_blank">
+                  <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-core1" target="_blank">
                     <img
                       src="https://img.shields.io/badge/-Case%20Técnico-2B5482?style=flat&logo=github&logoColor=fff&labelColor=1D3557" />
                   </a>
@@ -436,12 +451,12 @@ class Portfolio:
 
             <td>
               <div style="position: relative;">
-                <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-ops" target="_blank">
+                <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-ops1" target="_blank">
                   <img
-                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=hackathon-pod-squad3-ops&theme=github_dark_dimmed&show_owner=false&description_lines_count=2&bg_color=151B23" />
+                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=hackathon-pod-squad3-ops1&theme=github_dark_dimmed&show_owner=false&description_lines_count=2&bg_color=151B23" />
                 </a>
                 <div class="project-badges">
-                  <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-ops" target="_blank">
+                  <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-ops1" target="_blank">
                     <img
                       src="https://img.shields.io/badge/-Case%20Técnico-2B5482?style=flat&logo=github&logoColor=fff&labelColor=1D3557" />
                   </a>
