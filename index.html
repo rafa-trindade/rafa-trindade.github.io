@@ -123,16 +123,9 @@ class AboutMe:
 
     preferred_tech_stack: List[str] = field(
         default_factory=lambda: [
-            "Python", "PySpark", "SQL", "dbt", 
-            "DuckDB", "ETL/ELT", "Apache Airflow"
-        ]
-    )
-
-    platforms_and_cloud: List[str] = field(
-        default_factory=lambda: [
-            "OCI • AWS • GCP",
-            "Infrastructure as Code (Terraform)",
-            "Containerized Workloads (Docker / Kubernetes)"
+            "Python", "PySpark", "SQL", "DBT", 
+            "DuckDB", "ETL/ELT", "Apache Airflow",
+            "Terraform", "Docker", "Kubernetes"
         ]
     )
 
@@ -163,17 +156,23 @@ class AboutMe:
       </div>
 
       <div class=" center spacer">
-        <img src="https://img.shields.io/badge/-Data%20Engineering-2B5482?style=flat" alt="Data Engineering">
         <img src="https://img.shields.io/badge/-Analytics%20Engineering-2B5482?style=flat" alt="Analytics Engineering">
-        <img src="https://img.shields.io/badge/-Multi--Cloud%20(OCI%20•%20AWS%20•%20GCP)-2B5482?style=flat" />
-        <!-- <img src="https://img.shields.io/badge/-Modern%20Data%20Stack-2B5482?style=flat" alt="Modern Data Stack"> -->
+        <img src="https://img.shields.io/badge/-Data%20Engineering-2B5482?style=flat" alt="Data Engineering">
         <img src="https://img.shields.io/badge/-Data%20Modeling-2B5482?style=flat" alt="Data Modeling">
         <img src="https://img.shields.io/badge/-Data%20Quality-2B5482?style=flat" alt="Data Quality">
-        <img src="https://img.shields.io/badge/-Policy%20&%20Observability%20as%20Code-2B5482?style=flat"
-          alt="Policy as Code">
-        <!--
-        <img src="https://img.shields.io/badge/-Data%20Contracts-2B5482?style=flat" alt="Data Contracts">
+        <img src="https://img.shields.io/badge/-Policy%20as%20Code-2B5482?style=flat" alt="Policy as Code">
+
+        <img src="https://img.shields.io/badge/-Observability%20as%20Code-2B5482?style=flat"
+          alt="Observability as Code">
         <img src="https://img.shields.io/badge/-Process%20Optimization-2B5482?style=flat" alt="Process Optimization">
+
+        <!-- <img src="https://img.shields.io/badge/-Modern%20Data%20Stack-2B5482?style=flat" alt="Modern Data Stack"> -->
+
+
+
+        <!--
+        <img src="https://img.shields.io/badge/-Multi--Cloud%20(OCI%20•%20AWS%20•%20GCP)-2B5482?style=flat" />
+        <img src="https://img.shields.io/badge/-Data%20Contracts-2B5482?style=flat" alt="Data Contracts">
       -->
       </div>
 
@@ -205,9 +204,6 @@ class AboutMe:
           <img src="docs/badges/oci-infra.png" style="width: 100px; margin-right:7px; ">
         </a>
 
-
-
-
         <a href=" https://credentials.databricks.com/1ddd8ad3-0432-4d6b-a280-251f3b7e929a" target="_blank">
           <img src="docs/badges/databricks-fundamentals.png" style="width: 95px; margin-right:7px; ">
         </a>
@@ -223,7 +219,6 @@ class AboutMe:
 
 
         <!--
-
                 <a href="
             https://catalog-education.oracle.com/ords/certview/sharebadge?id=30086A4A3D1225961E33215DCB6789E59475E2BD461858926ACD251246069B1B"
             target="_blank">
@@ -331,6 +326,44 @@ class Portfolio:
 
             <td>
               <div style="position: relative;">
+                <a href="https://github.com/rafa-trindade/behavior-score-app" target="_blank">
+                  <img
+                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=behavior-score-app&theme=github_dark_dimmed&show_owner=false&description_lines_count=3&bg_color=151B23&langs_count=4" />
+                </a>
+                <div class="project-badges">
+                  <a href="https://github.com/rafa-trindade/behavior-score-app" target="_blank">
+                    <img
+                      src="https://img.shields.io/badge/-Projeto-2B5482?style=flat&logo=github&logoColor=fff&labelColor=1D3557" />
+                  </a>
+                  <a href="https://behavior-score-app.streamlit.app/" target="_blank">
+                    <img
+                      src="https://img.shields.io/badge/-Live-2B5482?style=flat&logo=streamlit&logoColor=fff&labelColor=1D3557" />
+                  </a>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <div style="position: relative;">
+                <a href="https://github.com/rafa-trindade/behavior-score-obs" target="_blank">
+                  <img
+                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=behavior-score-obs&theme=github_dark_dimmed&show_owner=false&description_lines_count=3&bg_color=151B23&langs_count=4" />
+                </a>
+                <div class="project-badges">
+                  <a href="https://github.com/rafa-trindade/behavior-score-obs" target="_blank">
+                    <img
+                      src="https://img.shields.io/badge/-Projeto-2B5482?style=flat&logo=github&logoColor=fff&labelColor=1D3557" />
+                  </a>
+                  <a href="https://behavior-score-obs.streamlit.app/" target="_blank">
+                    <img
+                      src="https://img.shields.io/badge/-Live-2B5482?style=flat&logo=streamlit&logoColor=fff&labelColor=1D3557" />
+                  </a>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <div style="position: relative;">
                 <a href="https://github.com/rafa-trindade/pdp-analytics-engineering" target="_blank">
                   <img
                     src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=pdp-analytics-engineering&theme=github_dark_dimmed&show_owner=false&description_lines_count=3&bg_color=151B23&langs_count=4" />
@@ -344,20 +377,10 @@ class Portfolio:
               </div>
             </td>
 
-            <td>
-              <div style="position: relative;">
-                <a href="https://github.com/rafa-trindade/petstore-scraping" target="_blank">
-                  <img
-                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=petstore-scraping&theme=github_dark_dimmed&show_owner=false&description_lines_count=3&bg_color=151B23" />
-                </a>
-                <div class="project-badges">
-                  <a href="https://github.com/rafa-trindade/petstore-scraping" target="_blank">
-                    <img
-                      src="https://img.shields.io/badge/-Projeto-2B5482?style=flat&logo=github&logoColor=fff&labelColor=1D3557" />
-                  </a>
-                </div>
-              </div>
-            </td>
+          </tr>
+
+          <!-- Linha 3 -->
+          <tr>
 
             <td>
               <div style="position: relative;">
@@ -374,35 +397,12 @@ class Portfolio:
               </div>
             </td>
 
-          </tr>
-
-          <!-- Linha 3 -->
-          <tr>
-
-            <td>
-              <div style="position: relative;">
-                <a href="https://github.com/rafa-trindade/petstore-bi" target="_blank">
-                  <img
-                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=petstore-bi&theme=github_dark_dimmed&show_owner=false&description_lines_count=2&bg_color=151B23&langs_count=4" />
-                </a>
-                <div class="project-badges">
-                  <a href="https://github.com/rafa-trindade/petstore-bi" target="_blank">
-                    <img
-                      src="https://img.shields.io/badge/-Projeto-2B5482?style=flat&logo=github&logoColor=fff&labelColor=1D3557" />
-                  </a>
-                  <a href="https://bi-petstore.streamlit.app/" target="_blank">
-                    <img
-                      src="https://img.shields.io/badge/-Live-2B5482?style=flat&logo=streamlit&logoColor=fff&labelColor=1D3557" />
-                  </a>
-                </div>
-              </div>
-            </td>
 
             <td>
               <div style="position: relative;">
                 <a href="https://github.com/rafa-trindade/local-data-infra" target="_blank">
                   <img
-                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=local-data-infra&theme=github_dark_dimmed&show_owner=false&description_lines_count=2&bg_color=151B23&langs_count=4" />
+                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=local-data-infra&theme=github_dark_dimmed&show_owner=false&description_lines_count=3&bg_color=151B23&langs_count=4" />
                 </a>
                 <div class="project-badges">
                   <a href="https://github.com/rafa-trindade/local-data-infra" target="_blank">
@@ -451,12 +451,12 @@ class Portfolio:
 
             <td>
               <div style="position: relative;">
-                <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-core1" target="_blank">
+                <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-core" target="_blank">
                   <img
-                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=hackathon-pod-squad3-core1&theme=github_dark_dimmed&show_owner=false&description_lines_count=2&bg_color=151B23" />
+                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=hackathon-pod-squad3-core&theme=github_dark_dimmed&show_owner=false&description_lines_count=3&bg_color=151B23" />
                 </a>
                 <div class="project-badges">
-                  <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-core1" target="_blank">
+                  <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-core" target="_blank">
                     <img
                       src="https://img.shields.io/badge/-Case%20Técnico-2B5482?style=flat&logo=github&logoColor=fff&labelColor=1D3557" />
                   </a>
@@ -466,12 +466,12 @@ class Portfolio:
 
             <td>
               <div style="position: relative;">
-                <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-ops1" target="_blank">
+                <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-ops" target="_blank">
                   <img
-                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=hackathon-pod-squad3-ops1&theme=github_dark_dimmed&show_owner=false&description_lines_count=2&bg_color=151B23" />
+                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=hackathon-pod-squad3-ops&theme=github_dark_dimmed&show_owner=false&description_lines_count=3&bg_color=151B23" />
                 </a>
                 <div class="project-badges">
-                  <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-ops1" target="_blank">
+                  <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-ops" target="_blank">
                     <img
                       src="https://img.shields.io/badge/-Case%20Técnico-2B5482?style=flat&logo=github&logoColor=fff&labelColor=1D3557" />
                   </a>
@@ -483,7 +483,7 @@ class Portfolio:
               <div style="position: relative;">
                 <a href="https://github.com/rafa-trindade/RAFAEL_TRINDADE_DDF_TECH_122025" target="_blank">
                   <img
-                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=RAFAEL_TRINDADE_DDF_TECH_122025&theme=github_dark_dimmed&show_owner=false&description_lines_count=2&bg_color=151B23" />
+                    src="https://github-readme-stats-rafatrindade.vercel.app/api/pin/?username=rafa-trindade&repo=RAFAEL_TRINDADE_DDF_TECH_122025&theme=github_dark_dimmed&show_owner=false&description_lines_count=3&bg_color=151B23" />
                 </a>
                 <div class="project-badges">
                   <a href="https://github.com/rafa-trindade/RAFAEL_TRINDADE_DDF_TECH_122025" target="_blank">
@@ -658,6 +658,44 @@ class Portfolio:
 
             <td>
               <div style="position: relative;">
+                <a href="https://github.com/rafa-trindade/behavior-score-app" target="_blank">
+                  <img src="docs/behavior-score-app.png" alt="Imagem do projeto"
+                    style="width: 100%; border-radius: 5px;" />
+                </a>
+                <div class="project-badges-screen">
+                  <a href="https://github.com/rafa-trindade/behavior-score-app" target="_blank">
+                    <img
+                      src="https://img.shields.io/badge/-behavior--score--app-2B5482?style=flat&logo=github&logoColor=fff&labelColor=1D3557" />
+                  </a>
+                  <a href="https://behavior-score-app.streamlit.app/" target="_blank">
+                    <img
+                      src="https://img.shields.io/badge/-Live-2B5482?style=flat&logo=streamlit&logoColor=fff&labelColor=1D3557" />
+                  </a>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <div style="position: relative;">
+                <a href="https://github.com/rafa-trindade/behavior-score-obs" target="_blank">
+                  <img src="docs/behavior-score-obs.png" alt="Imagem do projeto"
+                    style="width: 100%; border-radius: 5px;" />
+                </a>
+                <div class="project-badges-screen">
+                  <a href="https://github.com/rafa-trindade/behavior-score-obs" target="_blank">
+                    <img
+                      src="https://img.shields.io/badge/-behavior--score--obs-2B5482?style=flat&logo=github&logoColor=fff&labelColor=1D3557" />
+                  </a>
+                  <a href="https://behavior-score-obs.streamlit.app/" target="_blank">
+                    <img
+                      src="https://img.shields.io/badge/-Live-2B5482?style=flat&logo=streamlit&logoColor=fff&labelColor=1D3557" />
+                  </a>
+                </div>
+              </div>
+            </td>
+
+            <td>
+              <div style="position: relative;">
                 <a href="https://github.com/rafa-trindade/oncoped-360" target="_blank">
                   <img src="docs/oncoped.png" alt="Imagem do projeto" style="width: 100%; border-radius: 5px;" />
                 </a>
@@ -669,6 +707,11 @@ class Portfolio:
                 </div>
               </div>
             </td>
+
+          </tr>
+
+          <!-- Linha 2 -->
+          <tr>
 
             <td>
               <div style="position: relative;">
@@ -689,10 +732,6 @@ class Portfolio:
               </div>
             </td>
 
-          </tr>
-
-          <!-- Linha 2 -->
-          <tr>
 
             <td>
               <div style="position: relative;">
