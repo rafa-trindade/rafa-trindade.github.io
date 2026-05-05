@@ -63,7 +63,7 @@
                             d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                     </svg>
                 </a>
-                <a href="https://drive.google.com/uc?export=download&id=1ffnaXMv9zbzqNqWFN_TiyVuugvrjcHMu"
+                <a href="https://drive.google.com/file/d/1WbbY6z84T4AevGTEiQeRIJecSksq451o/view?usp=sharing"
                     target="_blank" rel="noopener noreferrer" class="header-icon" title="Download PDF">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 3v10m0 0l4-4m-4 4l-4-4M5 17h14v4H5v-4z" stroke="currentColor" stroke-width="2"
@@ -113,7 +113,7 @@
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                     <circle cx="12" cy="10" r="3"></circle>
                 </svg>
-                <span>Goiânia, Brasil</span>
+                <span>Goiás, Brasil (Remoto)</span>
             </div>
         </section>
 
@@ -172,107 +172,97 @@
         <section class="section fade-in-section">
             <h2 class="section-title">Principais Projetos em Dados</h2>
             <div class="projects-list">
-                <div class="project-card">
-                    <h3 class="project-title">Analytics Engineering | Data Warehouse</h3>
-                    <p class="project-description">
-                        Implementação completa de um Data Warehouse, desde a ingestão de dados transacionais (ELT) com
-                        Airflow e PostgreSQL, modelagem dimensional com DBT (incluindo testes de qualidade de dados e
-                        camadas staging, core e marts), até o consumo final em dashboards interativos no Power BI.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Apache Airflow</span>
-                        <span class="tech-tag">DBT</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Power BI</span>
+                <a href="https://github.com/rafa-trindade/hackathon-pod-squad3-core" target="_blank"
+                    style="text-decoration: none; color: inherit; display: block;">
+                    <div class="project-card">
+                        <h3 class="project-title">Hackathon Pod Academy | Credit Scoring & Data Platform</h3>
+                        <p class="project-description">
+                            Desenvolvimento de uma solução de ponta a ponta para Credit Scoring comportamental, premiada
+                            como projeto vencedor pela excelência técnica. A implementação utiliza a arquitetura
+                            Medallion
+                            com governança ativa, integrando contratos de dados e Data Lineage completo. O ecossistema
+                            conta
+                            com uma engine de processamento vetorial em DuckDB, Feature Store versionada e modelos de
+                            Machine Learning serializados, consumidos via painel de analytics e observabilidade em
+                            Streamlit. Tudo isso
+                            sustentado por uma infraestrutura Cloud-Ready (OCI, Terraform e Docker), focada em
+                            portabilidade
+                            total e zero lock-in.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">DuckDB</span>
+                            <span class="tech-tag">Apache Airflow</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">OCI</span>
+                            <span class="tech-tag">Terraform</span>
+                        </div>
                     </div>
-                </div>
+                </a>
 
-                <div class="project-card">
-                    <h3 class="project-title">Oncoped-360 | Monitoramento de Oncologia Infantojuvenil</h3>
-                    <p class="project-description">
-                        Pipeline de dados para monitoramento de atendimentos, repasses públicos e estrutura hospitalar
-                        voltados à oncologia infantojuvenil no Brasil, integrando dados de fontes públicas como DATASUS,
-                        INCA, CNES e SIOPS.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Apache Airflow</span>
-                        <span class="tech-tag">MinIO</span>
-                        <span class="tech-tag">Dremio</span>
-                        <span class="tech-tag">DBT</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Apache Superset</span>
+                <a href="https://github.com/rafa-trindade/kaggle-datahub" target="_blank"
+                    style="text-decoration: none; color: inherit; display: block;">
+                    <div class="project-card">
+                        <h3 class="project-title">Kaggle DataHub | Pipeline de Dados Públicos Brasileiros</h3>
+                        <p class="project-description">
+                            Pipeline ETL automatizado para extração, processamento e publicação de dados governamentais
+                            (DATASUS, SIOPS, INCA, IBGE e CNES) em dataset público no Kaggle. A solução implementa
+                            coleta
+                            robusta via FTP com suporte a retry e resume por byte offset, utilizando DuckDB para
+                            processamento analítico e carga incremental em Data Lake (MinIO/S3), com automação final
+                            via Kaggle API para versionamento e detecção de estado do dataset.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">DuckDB</span>
+                            <span class="tech-tag">MinIO</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Kaggle API</span>
+                            <span class="tech-tag">boto3</span>
+                        </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <h3 class="project-title">Pipeline de Orquestração de Dados | Kaggle DataHub</h3>
-                    <p class="project-description">
-                        Pipeline de orquestração de dados (ETL) para automatizar a coleta, processamento e armazenamento
-                        de datasets no Kaggle, utilizando Apache Airflow para gerenciamento do fluxo de trabalho e
-                        Docker para contêinerização do ambiente.
-                    </p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Apache Airflow</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Kaggle API</span>
-                    </div>
-                </div>
+                </a>
             </div>
+
         </section>
 
         <!-- Experience -->
         <section class="section fade-in-section">
             <h2 class="section-title">Experiência Profissional</h2>
             <div class="experience-list">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-position">Analista de BI e Gestão Operacional | Assessoria</h3>
-                        <span class="experience-period">Abril 2025 – Outubro 2025</span>
-                    </div>
-                    <p class="experience-company">MH Refeições • Goiânia, GO</p>
-                    <p class="experience-description">
-                        Análise de dados e suporte à tomada de decisão estratégica, incluindo planejamento financeiro e
-                        apoio à gestão administrativa e operacional. Desenvolvimento e apresentação de relatórios de
-                        performance e dashboards para monitoramento de resultados das empresas clientes.
-                    </p>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3 class="experience-position">Sócio Administrador</h3>
-                        <span class="experience-period">Setembro 2015 – Junho 2025</span>
-                    </div>
-                    <p class="experience-company">Hotel Pousada da Ponte • Britânia, GO</p>
-                    <p class="experience-description">
-                        Liderança, gestão administrativa e operacional. Desenvolvimento e implementação de sistema
-                        proprietário para controle de reservas e hospedagens.
-                    </p>
-                </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
                         <h3 class="experience-position">Proprietário | Gestor Administrativo e Operacional</h3>
-                        <span class="experience-period">Janeiro 2019 – Janeiro 2025</span>
+                        <span class="experience-period">Setembro 2015 – Outubro 2025</span>
                     </div>
-                    <p class="experience-company">Restaurante Dona Nize • Britânia, GO</p>
+                    <p class="experience-company">Hotel Pousada da Ponte e Restaurante Dona Nize • Britânia, GO</p>
                     <p class="experience-description">
-                        Liderança e gestão de equipe, gerenciamento de recursos, supervisão das operações de cozinha,
-                        manutenção dos padrões de qualidade, desenvolvimento de parcerias estratégicas com fornecedores,
-                        precificação, gestão de contratos e relacionamento com clientes corporativos.
+                        • Liderança e gestão integral do negócio, incluindo o gerenciamento de uma equipe de 40
+                        colaboradores
+                        <br>
+                        • Administração do controle financeiro, orçamento, fluxo de caixa, precificação e análise de
+                        desempenho do negócio
+                        <br>
+                        • Desenvolvimento de parcerias estratégicas, gestão de contratos e relacionamento com clientes
+                        corporativos
+                        <br>
+                        • Concepção de sistemas proprietários para apoio à operação
+
                     </p>
                 </div>
 
                 <div class="experience-item">
                     <div class="experience-header">
-                        <h3 class="experience-position">Analista de Teste / QA</h3>
+                        <h3 class="experience-position">Analista de Teste | QA</h3>
                         <span class="experience-period">Fevereiro 2012 – Agosto 2013</span>
                     </div>
                     <p class="experience-company">Prime Control • Curitiba, PR</p>
                     <p class="experience-description">
-                        Auxílio desde o planejamento até a execução de Processos de Teste e Qualidade de Software.
+                        • Atuação de ponta a ponta no ciclo de garantia de qualidade de software
+                        <br>
+                        • Planejamento, estruturação e execução de Processos de Teste e Qualidade de Software
                     </p>
                 </div>
 
@@ -283,8 +273,10 @@
                     </div>
                     <p class="experience-company">BrScan • Brasília, DF</p>
                     <p class="experience-description">
-                        Estágio em projetos de softwares desde levantamentos de requisitos com o cliente até o
-                        desenvolvimento de aplicações criadas especificamente para os contratantes da empresa.
+                        • Levantamento de requisitos de software diretamente com os clientes
+                        <br>
+                        • Apoio no desenvolvimento de aplicações e soluções criadas sob medida para os contratantes da
+                        empresa
                     </p>
                 </div>
             </div>
@@ -302,20 +294,8 @@
                     <p class="education-institution">PoD Academy</p>
                     <div class="education-highlights">
                         <span>• Engenharia de Dados</span>
+                        <span>• Engenharia de IA</span>
                         <span>• Análise e Ciência de Dados</span>
-                    </div>
-                </div>
-
-                <div class="education-item">
-                    <div class="education-header">
-                        <h3 class="education-course">Formação em Data Analytics - Tecnologia da Informação</h3>
-                        <span class="education-period">2024 - 2025</span>
-                    </div>
-                    <p class="education-institution">Preditiva Analytics</p>
-                    <div class="education-highlights">
-                        <span>• Excel para Análise de Dados</span>
-                        <span>• Power BI para Análise de Dados</span>
-                        <span>• Data Analytics</span>
                     </div>
                 </div>
 
@@ -351,7 +331,20 @@
                         <li>SQL Para Análise de Dados e Data Science</li>
                         <li>Modelagem e Análise de Dados com Power BI</li>
                         <li>Infraestrutura Como Código com Terraform, AWS, Azure e Databricks</li>
+                        <li>Modelagem, Implementação e Governança de Data Warehouses</li>
                         <li>Engenharia de Dados com Airbyte, DBT e SQL</li>
+                    </ul>
+                </div>
+
+                <div class="certification-item">
+                    <div class="certification-header">
+                        <h3 class="certification-title">Formação Arquiteto de Dados</h3>
+                        <span class="certification-year">2025</span>
+                    </div>
+                    <p class="certification-provider">Data Science Academy</p>
+                    <ul class="certification-courses">
+                        <li>Arquitetura de Plataforma de Dados e Modern Data Stack</li>
+                        <li>Pipelines de ETL e Machine Learning com Apache Spark</li>
                         <li>Orquestração de Fluxos de Dados com Apache Airflow</li>
                         <li>Projeto e Implementação de Plataforma de Dados com Snowflake</li>
                     </ul>
