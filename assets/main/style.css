@@ -360,7 +360,7 @@ img {
 
 .article-tag {
   font-size: 11px;
-  background: #355A83;
+  background: #1D3557;
   color: #fff;
   padding: 1px 4px 1px 4px;
   border-radius: 4px;
@@ -369,7 +369,7 @@ img {
 
 .article-date {
   font-size: 11px;
-  color: #8b949e;
+  color: #adbac7;
   white-space: nowrap;
   padding-top: 2px;
 }
@@ -377,14 +377,14 @@ img {
 .article-title {
   font-size: 14px;
   font-weight: 600;
-  color: #447EC7;
+  color: #539bf5;
   margin: 0;
   line-height: 1.4;
 }
 
 .article-excerpt {
   font-size: 12px;
-  color: #95A2AE;
+  color: #adbac7;
   margin: 0;
   line-height: 1.6;
   flex: 1;
@@ -392,13 +392,13 @@ img {
 
 .article-link {
   font-size: 12px;
-  color: #447EC7;
+  color: #539bf5;
   margin-top: 4px;
 }
 
 .article-see-all {
   font-size: 12px;
-  color: #447EC7;
+  color: #539bf5;
   text-decoration: none;
   transition: color 0.2s;
 }
