@@ -375,7 +375,7 @@ img {
 }
 
 .article-title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #e6edf3;
   margin: 0;
@@ -392,21 +392,23 @@ img {
 
 .article-link {
   font-size: 12px;
-  color: #58a6ff;
+  color: #447EC7;
   margin-top: 4px;
 }
 
 .article-see-all {
   font-size: 12px;
-  color: #8b949e;
+  color: #447EC7;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .article-see-all:hover {
-  color: #58a6ff;
+  color: #8b949e;
   text-decoration: none;
 }
+
+
 
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
