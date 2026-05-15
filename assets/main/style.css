@@ -362,7 +362,7 @@ img {
   font-size: 11px;
   background: #355A83;
   color: #fff;
-  padding: 2px 8px;
+  padding: 1px 4px 3px 4px;
   border-radius: 4px;
   white-space: nowrap;
 }
@@ -375,7 +375,7 @@ img {
 }
 
 .article-title {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   color: #447EC7;
   margin: 0;
