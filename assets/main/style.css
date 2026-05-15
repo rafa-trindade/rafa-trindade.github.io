@@ -297,6 +297,117 @@ img {
   margin: 0 auto !important;
 }
 
+.article-grid {
+  display: table;
+  width: 95%;
+  border-collapse: collapse;
+  margin: 0 auto 6px auto;
+  table-layout: fixed;
+}
+
+.article-grid-row {
+  display: table-row;
+}
+
+.article-card-wrap {
+  display: table-cell;
+  width: 33.33%;
+  vertical-align: top;
+  padding: 8px 6px 4px 8px;
+}
+
+.article-card-wrap:first-child {
+  padding-left: 0;
+}
+
+.article-card-wrap:last-child {
+  padding-right: 0;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 14px;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.article-card:hover {
+  border-color: #2B5482;
+  background: #1a2130;
+  text-decoration: none;
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.article-tag {
+  font-size: 11px;
+  background: #355A83;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.article-date {
+  font-size: 11px;
+  color: #8b949e;
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+.article-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e6edf3;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.article-excerpt {
+  font-size: 12px;
+  color: #8b949e;
+  margin: 0;
+  line-height: 1.6;
+  flex: 1;
+}
+
+.article-link {
+  font-size: 12px;
+  color: #58a6ff;
+  margin-top: 4px;
+}
+
+.article-see-all {
+  font-size: 12px;
+  color: #8b949e;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.article-see-all:hover {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
 
@@ -543,6 +654,26 @@ img {
     position: relative !important;
     width: 100% !important;
     margin: 0 auto !important;
+  }
+
+  .article-grid {
+    display: block;
+    width: 100%;
+  }
+
+  .article-grid-row {
+    display: block;
+  }
+
+  .article-card-wrap {
+    display: block;
+    width: 100%;
+    padding: 0 0 16px 0;
+    box-sizing: border-box;
+  }
+
+  .article-card-wrap:last-child {
+    padding-bottom: 0;
   }
 
 }
