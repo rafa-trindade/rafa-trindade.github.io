@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CANP - Inteligência de Mercado & Análise de Dados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/cases/canp/style.css">
+
+
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+  </section>
+
+  <div class="tags-block">
+    <span class="htag">Web Analytics</span>
+    <span class="htag g">Data Storytelling</span>
+    <span class="htag">LGPD</span>
+    <span class="htag g">Governança de Dados</span>
+    <span class="htag">KPIs & Dashboards</span>
+    <span class="htag g">IoT · ETL · NPS</span>
+    <span class="htag n">Agroindustria</span>
+  </div>
+
+  <!-- CONTENT -->
+  <main class="wrap">
+
+    <div class="sec-eye"><span class="chip">00</span>Contexto</div>
+    <h2 class="stitle">Visão Geral do Projeto e Necessidade de Inovação</h2>
+
+    <!-- LEAD -->
+    <div class="lead sec">
+      <p>A CANP é uma cooperativa de pequenos produtores do Norte do Paraná reconhecida pela excelência do <strong>Café
+          Especial</strong> e do <strong>Mel Gourmet</strong>. Seus produtos são validados por Q-Graders certificados e
+        meliponicultores renomados, atingindo consumidores gourmet e sustentáveis no Brasil e no exterior.
+      </p>
+
+      <p>Nos últimos meses, a CANP registrou um aumento expressivo de comentários negativos nas redes sociais e
+        marketplaces centrados em dois temas: <strong>atrasos nas entregas</strong> e <strong>inconsistências no sabor
+          entre lotes</strong>. Simultaneamente, a equipe de produção relata dificuldades causadas por variações
+        climáticas e pela precariedade da logística rural. A ausência de um sistema integrado de coleta e análise de
+        dados impede a identificação das causas-raiz e a tomada de decisões proativas.
+      </p>
+
+      <p>Diante desse cenário, foi desenvolvido um diagnóstico estratégico estruturado em cinco dimensões analíticas,
+        com foco em integrar dados dispersos, identificar causas-raiz e transformar a gestão da CANP de reativa em
+        orientada por dados.</p>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div class="ov-grid sec">
+      <div class="ov-card">
+        <div class="ov-num">Passo 01</div>
+        <div class="ov-name">Web Analytics</div>
+        <div class="ov-desc">Plano de coleta e análise de dados digitais</div>
+      </div>
+      <div class="ov-card">
+        <div class="ov-num">Passo 02</div>
+        <div class="ov-name">Data Storytelling</div>
+        <div class="ov-desc">Narrativa analítica e visualizações propostas</div>
+      </div>
+      <div class="ov-card">
+        <div class="ov-num">Passo 03</div>
+        <div class="ov-name">LGPD & Privacidade</div>
+        <div class="ov-desc">Data mapping, riscos e controles de conformidade</div>
+      </div>
+      <div class="ov-card">
+        <div class="ov-num">Passo 04</div>
+        <div class="ov-name">Governança de Dados</div>
+        <div class="ov-desc">Plano de qualidade e definição de Data Owners</div>
+      </div>
+      <div class="ov-card">
+        <div class="ov-num">Passo 05</div>
+        <div class="ov-name">Dashboards</div>
+        <div class="ov-desc">KPIs, semáforos e protocolos de ação</div>
+      </div>
+      <div class="ov-card">
+        <div class="ov-num">Instrumentação & Processos</div>
+        <div class="ov-name">IoT · ETL · NPS</div>
+        <div class="ov-desc">Sensores LoRaWAN, pipelines de integração e métricas de lealdade</div>
+      </div>
+    </div>
+
+    <hr class="dv" />
+
+    <!-- ── PASSO 1 ── -->
+    <section class="sec" id="s1">
+      <div class="sec-eye"><span class="chip">01</span>Web Analytics</div>
+      <h2 class="stitle">Plano de Coleta e Análise de Dados Digitais</h2>
+
+      <p class="bt">A CANP vem enfrentando uma crise reputacional crescente em ambientes digitais. Comentários negativos
+        sobre atrasos na entrega e inconsistências no sabor se multiplicam em plataformas como Instagram, Facebook e
+        marketplaces de produtos artesanais e gourmet. Na era digital, a percepção do consumidor é moldada tanto pela
+        experiência direta com o produto quanto pelo que outros consumidores compartilham publicamente. O fenômeno do
+        <strong>eWOM (electronic Word of Mouth)</strong> tem impacto direto na intenção de compra futura de novos
+        clientes.
+      </p>
+
+      <p class="bt">A principal lacuna identificada é a inexistência de um sistema estruturado de coleta e cruzamento de
+        dados. Todas as informações, produção, logística, clima e atendimento, são registradas manualmente em
+        planilhas desconectadas, impossibilitando a análise integrada.</p>
+
+      <h3 class="sub">1.2 Objetivos do Plano de Web Analytics</h3>
+      <ul class="bl">
+        <li>Identificar as origens dos comentários negativos e os padrões de insatisfação dos consumidores</li>
+        <li>Estabelecer correlações entre datas de maior volume de reclamações e falhas logísticas ou produtivas</li>
+        <li>Mapear quais produtos (Café Especial ou Mel Gourmet) geram mais engajamento positivo ou negativo</li>
+        <li>Propor a automação parcial da coleta de dados que hoje é feita de forma manual</li>
+        <li>Subsidiar decisões estratégicas com base em evidências digitais e transacionais</li>
+      </ul>
+
+      <h3 class="sub">1.3 Técnicas de Coleta de Dados Aplicáveis</h3>
+
+      <p class="bt"><strong>Social Listening</strong> - Rastreamento sistemático de menções à marca em plataformas
+        digitais. Ferramentas como Mention, Brand24 ou o nativo Meta Business Suite permitem capturar comentários,
+        avaliações e menções em tempo quase real. Para a CANP, essa técnica identificaria padrões temporais, se o pico
+        de reclamações coincide com determinadas datas de entrega ou safras específicas. O monitoramento de redes
+        sociais é uma das ferramentas mais eficazes de inteligência de mercado de baixo custo, especialmente para
+        pequenas e médias empresas que não dispõem de grandes orçamentos de pesquisa.</p>
+
+      <p class="bt"><strong>Web Scraping</strong> - Extração automatizada de dados de marketplaces como Mercado Livre,
+        Amazon, Elo7 e plataformas de nicho gourmet, por meio de bibliotecas como BeautifulSoup e Scrapy (Python). Cabe
+        destacar que o web scraping deve ser realizado com observância estrita dos Termos de Uso de cada plataforma e da
+        LGPD, especialmente quando envolve dados pessoais de usuários; questão aprofundada no Passo 3.</p>
+
+      <p class="bt"><strong>Coleta via APIs Oficiais</strong> - Sempre que disponível, a coleta por APIs deve ser
+        priorizada, pois é mais confiável, estruturada e legalmente segura. O Instagram e o Facebook disponibilizam a
+        Meta Graph API para dados de engajamento das próprias publicações da cooperativa. O Google Meu Negócio também
+        disponibiliza API para monitoramento de avaliações.</p>
+
+      <p class="bt"><strong>Pesquisa Online Estruturada</strong> - Questionários digitais via Google Forms ou Typeform
+        junto à base cadastrada de clientes, complementando os dados passivos coletados por scraping e APIs com a
+        perspectiva ativa do consumidor sobre qualidade, entrega e satisfação geral.</p>
+
+      <h3 class="sub">1.4 Fontes de Dados Online</h3>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Fonte</th>
+              <th>Tipo de Dado</th>
+              <th>Método de Coleta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Instagram / Facebook</td>
+              <td>Comentários, avaliações, menções, engajamento</td>
+              <td>Meta Graph API / Social Listening</td>
+            </tr>
+            <tr>
+              <td>Mercado Livre / Amazon</td>
+              <td>Avaliações de produtos, notas, reclamações</td>
+              <td>Web Scraping / API oficial</td>
+            </tr>
+            <tr>
+              <td>Google Meu Negócio</td>
+              <td>Avaliações, notas, comentários locais</td>
+              <td>Google Places API</td>
+            </tr>
+            <tr>
+              <td>Google Analytics 4</td>
+              <td>Comportamento no site, funil de compra</td>
+              <td>Tag de rastreamento (JS)</td>
+            </tr>
+            <tr>
+              <td>Reclame Aqui</td>
+              <td>Reclamações formais de consumidores</td>
+              <td>Web Scraping (com cautela)</td>
+            </tr>
+            <tr>
+              <td>Pesquisa Online (Forms)</td>
+              <td>Percepções e satisfação dos clientes</td>
+              <td>Questionário estruturado</td>
+            </tr>
+            <tr>
+              <td>INMET / CPTEC-INPE</td>
+              <td>Dados climáticos históricos e previsões</td>
+              <td>API pública de dados abertos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub">1.5 Uso de Dados Transacionais</h3>
+      <p class="bt">Os dados transacionais correspondem ao registro de cada operação comercial realizada pela
+        cooperativa: vendas por produto, volume de pedidos por período, datas de faturamento, prazos de entrega
+        prometidos versus realizados, devoluções e reclamações formais.</p>
+      <div class="cbox g">
+        <div class="clbl">Integração Essencial</div>
+        <p>O cruzamento dos dados transacionais com os dados de reputação digital é fundamental para estabelecer
+          relações de causa e efeito. Ao correlacionar o volume de reclamações sobre atraso na entrega (coletado nas
+          redes sociais) com os registros de despacho do setor logístico, é possível identificar se há um padrão
+          sazonal, como o aumento de pedidos no período natalino sobrecarregando a capacidade de entrega. A vantagem
+          competitiva baseada em análise de dados só se materializa quando <strong>os dados operacionais internos são
+            integrados a dados externos de mercado</strong>, formando uma visão holística da operação. Para a CANP, isso
+          significa unificar planilhas de colheita, registros de torrefação, notas fiscais e avaliações de clientes em
+          uma única plataforma analítica.</p>
+      </div>
+
+      <h3 class="sub">1.6 Proposta de Pesquisa de Mercado Online</h3>
+      <p class="bt">Pesquisa estruturada em cinco blocos temáticos, distribuída via e-mail marketing para a base
+        cadastrada de compradores e por meio de stories no Instagram:</p>
+      <ul class="bl">
+        <li><strong>Bloco 1 - Perfil do consumidor:</strong> faixa etária, localização, canal de compra habitual,
+          frequência de compra.</li>
+        <li><strong>Bloco 2 - Avaliação do produto:</strong> notas de 1 a 5 para sabor, apresentação, relação
+          custo-benefício e consistência entre lotes.</li>
+        <li><strong>Bloco 3 - Avaliação da entrega:</strong> prazo, condições da embalagem ao receber, clareza nas
+          informações de rastreamento.</li>
+        <li><strong>Bloco 4 - Experiência digital:</strong> facilidade de compra no canal utilizado, qualidade das
+          informações nos perfis das redes sociais.</li>
+        <li><strong>Bloco 5 - Net Promoter Score (NPS):</strong> "Em uma escala de 0 a 10, qual a probabilidade de você
+          recomendar os produtos da CANP a um amigo ou familiar?"</li>
+      </ul>
+
+      <h3 class="sub">1.7 Riscos e Limitações</h3>
+      <div class="cbox r">
+        <div class="clbl">Riscos do Web Scraping</div>
+        <p><strong>Violação dos Termos de Uso:</strong> sites como Mercado Livre e Instagram proíbem explicitamente a
+          extração automatizada com risco de bloqueio de acesso e ações legais. <strong>Coleta de dados pessoais sem
+            base legal:</strong> quando os dados incluem nomes, localização ou identificadores de usuários, há potencial
+          violação da LGPD (Art. 7° e Art. 9°). <strong>Instabilidade das coletas:</strong> mudanças no layout HTML dos
+          sites invalidam os scripts de scraping, exigindo manutenção contínua. <strong>Viés de amostra:</strong> as
+          avaliações públicas representam apenas os consumidores mais engajados (positivos ou negativos), não
+          necessariamente a maioria silenciosa.</p>
+      </div>
+      <div class="cbox">
+        <div class="clbl">Limitação Rural</div>
+        <p>A conectividade limitada nas propriedades rurais da CANP dificulta a coleta de dados ambientais e produtivos
+          em tempo real. Recomenda-se a adoção de dispositivos <strong>IoT com LoRaWAN</strong>, armazenamento local e
+          transmissão por LPWAN em áreas sem cobertura 4G/5G, com baixo consumo energético.</p>
+      </div>
+
+      <h3 class="sub">1.8 Tipos de Análises de Marketing Recomendadas</h3>
+      <ul class="bl">
+        <li><strong>Análise de Sentimento:</strong> classificação automática dos comentários em positivos, negativos e
+          neutros via Processamento de Linguagem Natural (PLN). Permite rastrear a evolução da percepção da marca ao
+          longo do tempo.</li>
+        <li><strong>Análise de Funil de Conversão:</strong> mapeamento do caminho do consumidor desde o primeiro contato
+          digital até a compra, identificando onde ocorrem os maiores índices de abandono.</li>
+        <li><strong>Análise de Coorte:</strong> segmentação de consumidores por período de primeira compra para entender
+          o comportamento de retenção; quantos clientes que compraram pela primeira vez em determinado mês voltaram nos
+          meses seguintes.</li>
+        <li><strong>Análise de Cluster (Segmentação):</strong> agrupamento dos consumidores por perfil de compra
+          (frequência, ticket médio, produto preferido) para personalizar campanhas de marketing.</li>
+        <li><strong>Correlação Multivariada:</strong> cruzamento estatístico entre variáveis climáticas, produtivas,
+          logísticas e de satisfação do cliente para identificar relações de causa e efeito.</li>
+      </ul>
+      <div class="cbox g">
+        <div class="clbl">Impacto no Processo Decisório</div>
+        <p>Se a análise de sentimento detectar aumento de 30% nos comentários negativos sobre entrega em determinada
+          semana, o gestor logístico pode ser alertado automaticamente para revisar rotas e prazos. Se o cruzamento de
+          dados climáticos com registros de colheita revelar que geadas abaixo de −2°C reduzem em 40% a produção de mel
+          no mês seguinte, a cooperativa pode antecipar o planejamento de estoque. Se a análise de coorte mostrar que
+          60% dos clientes não repetem a compra após a primeira experiência, campanhas de e-mail de pós-venda podem ser
+          automatizadas. O Web Analytics transforma <strong>dados brutos e dispersos em conhecimento acionável</strong>,
+          reduzindo a incerteza nas decisões estratégicas da cooperativa.</p>
+      </div>
+    </section>
+
+    <hr class="dv" />
+
+    <!-- ── PASSO 2 ── -->
+    <section class="sec" id="s2">
+      <div class="sec-eye"><span class="chip">02</span>Data Storytelling</div>
+      <h2 class="stitle">Visualização de Dados e Narrativa Analítica</h2>
+
+      <p class="bt">Data Storytelling é a prática de comunicar insights derivados de dados de forma narrativa,
+        combinando análise quantitativa com elementos visuais e linguagem acessível, tornando as informações
+        compreensíveis e persuasivas para audiências que nem sempre são especialistas em dados. Para a CANP, essa
+        narrativa é especialmente importante porque a diretoria e o conselho gestor precisam tomar decisões críticas sem
+        necessariamente dominar técnicas estatísticas avançadas.</p>
+      <p class="bt">A estrutura adotada segue o modelo de cinco atos do storytelling analítico:</p>
+      <p class="bt"><strong>Contexto → Conflito → Evidências → Insights → Recomendação.</strong></p>
+
+      <h3 class="sub">2.2 Inventário de Dados para o Storytelling</h3>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Dados Disponíveis</th>
+              <th>Formato Atual</th>
+              <th>Lacunas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Produção</td>
+              <td>Volume colheita, tempo torra, umidade secagem</td>
+              <td>Planilhas Excel</td>
+              <td>Sem timestamp padronizado</td>
+            </tr>
+            <tr>
+              <td>Clima</td>
+              <td>Registros de chuva e temperatura (INMET)</td>
+              <td>Planilhas / API</td>
+              <td>Não integrado à produção</td>
+            </tr>
+            <tr>
+              <td>Logística</td>
+              <td>Datas despacho, rotas, tempo entrega</td>
+              <td>Anotações manuais</td>
+              <td>Sem geolocalização</td>
+            </tr>
+            <tr>
+              <td>Avaliações</td>
+              <td>Notas e comentários redes sociais</td>
+              <td>Não estruturado</td>
+              <td>Sem categorização</td>
+            </tr>
+            <tr>
+              <td>Especialistas</td>
+              <td>Laudos Q-Graders, relatórios apicultura</td>
+              <td>PDF</td>
+              <td>Não digitalizados</td>
+            </tr>
+            <tr>
+              <td>Vendas</td>
+              <td>Volume vendido por produto e canal</td>
+              <td>Planilhas</td>
+              <td>Sem segmentação por cliente</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub">2.3 Roteiro Narrativo Estruturado</h3>
+      <p class="bt"><strong>Contexto:</strong> A CANP construiu uma reputação positiva sustentada pela qualidade
+        intrínseca dos produtos, pelo know-how cafeeiro da região Norte do Paraná e pela singularidade do Mel de Flor de
+        Café, um produto raro no mercado mundial. O mercado de cafés especiais cresceu significativamente na última
+        década, com o Brasil consolidando-se como o maior produtor e um dos maiores consumidores mundiais do segmento.
+      </p>
+      <p class="bt"><strong>Conflito:</strong> Nos últimos meses, a CANP registrou um aumento expressivo de comentários
+        negativos nas redes sociais e marketplaces centrados em dois temas: atrasos nas entregas e inconsistências no
+        sabor entre lotes. Esses fatores ameaçam diretamente a reputação construída ao longo de anos.</p>
+
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Problema Identificado</th>
+              <th>Impacto Observado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Atrasos nas entregas</td>
+              <td>Queda nas avaliações dos marketplaces; perda de recompra</td>
+            </tr>
+            <tr>
+              <td>Inconsistência no sabor entre lotes</td>
+              <td>Desconfiança do consumidor; redução do NPS</td>
+            </tr>
+            <tr>
+              <td>Ausência de dados integrados</td>
+              <td>Impossibilidade de diagnóstico e ação proativa</td>
+            </tr>
+            <tr>
+              <td>Logística rural precária</td>
+              <td>Aumento do tempo de entrega e deterioração de lotes</td>
+            </tr>
+            <tr>
+              <td>Variações climáticas não monitoradas</td>
+              <td>Impacto não rastreado na safra e na qualidade do mel</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub">2.3.3 Evidências - Cadeia de Causalidade</h3>
+      <div class="evs">
+        <div class="ev">
+          <div class="ev-b">Evidência 01<br />Clima × Produção</div>
+          <div class="ev-t">Registros históricos do INMET para a região Norte do Paraná indicam que períodos de chuvas
+            irregulares (déficit hídrico abaixo de 50mm/mês durante a floração do café) estão associados a reduções de
+            <strong>15% a 25%</strong> no volume de grãos de qualidade superior (Specialty Grade, pontuação acima de 80
+            na escala SCA). Simultaneamente, temperaturas abaixo de 10°C reduzem a atividade das abelhas e a produção de
+            mel em até <strong>35%</strong> nos meses subsequentes. Esses dados, cruzados com os registros de produção
+            da cooperativa, podem revelar se as inconsistências nos lotes coincidem com períodos climáticos adversos.
+          </div>
+        </div>
+        <div class="ev">
+          <div class="ev-b">Evidência 02<br />Logística × Reclamações</div>
+          <div class="ev-t">A dispersão geográfica dos apiários e propriedades cafeeiras em estradas sem pavimentação
+            aumenta o tempo médio de coleta em <strong>aproximadamente 40%</strong> nos períodos chuvosos. O atraso na
+            coleta do mel fora do ponto ideal de maturação pode apresentar teores de umidade elevados, afetando sabor e
+            durabilidade. Para o café, o atraso na secagem compromete os perfis sensoriais desejados para o padrão
+            gourmet.</div>
+        </div>
+        <div class="ev">
+          <div class="ev-b">Evidência 03<br />Sazonalidade × Reclamações</div>
+          <div class="ev-t">Períodos de alta demanda (Natal, Dia dos Namorados, Semana do Café) coincidem historicamente
+            com picos de vendas que sobrecarregam a capacidade logística da cooperativa. A ausência de planejamento
+            preditivo de demanda resulta em prazos de entrega superiores ao prometido, gerando o <strong>principal
+              motivo de reclamação</strong> identificado nas redes sociais.</div>
+        </div>
+      </div>
+
+      <h3 class="sub">2.3.4 Insights Estratégicos</h3>
+      <div class="ig">
+        <div class="ic">
+          <div class="in">01</div>
+          <div class="it">Problemas de qualidade têm origem nas <strong>etapas de processamento e secagem</strong>, não
+            na matéria-prima. Monitorar umidade e temperatura dos terreiros em tempo real é a intervenção de maior
+            impacto.</div>
+        </div>
+        <div class="ic">
+          <div class="in">02</div>
+          <div class="it">Os atrasos nas entregas são <strong>previsíveis</strong>. Ocorrem em períodos chuvosos e em
+            datas comerciais de alta demanda. Um modelo preditivo simples permitiria antecipar o reforço logístico.
+          </div>
+        </div>
+        <div class="ic">
+          <div class="in">03</div>
+          <div class="it">A CANP carece não de dados, mas de <strong>integração de dados</strong>. As informações
+            existem em planilhas desconectadas; o investimento é em infraestrutura ETL, não em novos sistemas de coleta.
+          </div>
+        </div>
+        <div class="ic">
+          <div class="in">04</div>
+          <div class="it">Os produtos de maior diferenciação (Mel de Flor de Café, Café Natural Cereja Descascado) geram
+            maior engajamento positivo; <strong>e maior frustração</strong> quando apresentam inconsistências.</div>
+        </div>
+      </div>
+
+      <h3 class="sub">2.3.5 Recomendações ao Conselho Gestor</h3>
+      <ol class="nl">
+        <li>Implantar <strong>sensores IoT com LoRaWAN</strong> nos terreiros de secagem e armazéns, integrados a um
+          sistema de alertas automáticos. Investimento estimado: baixo, com retorno em redução de perdas de lote.</li>
+        <li>Desenvolver um <strong>calendário de planejamento de demanda</strong> baseado em séries históricas de vendas
+          e datas comemorativas, comunicando aos parceiros logísticos com antecedência mínima de 30 dias.</li>
+        <li>Implementar um processo de <strong>ETL simples</strong> (n8n ou Power Automate) para integrar planilhas de
+          produção, logística e avaliações de clientes em um único repositório de dados.</li>
+        <li>Criar um <strong>protocolo de rastreabilidade por lote</strong>, vinculando cada unidade vendida ao
+          produtor, data de colheita, data de processamento e condições climáticas do período.</li>
+        <li>Estabelecer um processo sistemático de <strong>resposta a comentários negativos</strong> nas redes sociais,
+          com SLA de 24 horas.</li>
+      </ol>
+
+      <h3 class="sub">2.4 Visualizações Propostas para o Storyboard</h3>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Visualização</th>
+              <th>Dados Utilizados</th>
+              <th>Objetivo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Linha do tempo: Reclamações × Entregas</td>
+              <td>Datas de reclamação + datas de despacho</td>
+              <td>Evidenciar correlação temporal</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mapa de calor: Propriedades × Prazo</td>
+              <td>Geolocalização + tempo de coleta por propriedade</td>
+              <td>Identificar rotas críticas</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Gráfico de dispersão: Chuva × Qualidade</td>
+              <td>Dados INMET + notas Q-Grader por período</td>
+              <td>Mostrar impacto climático na qualidade</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Termômetro de NPS</td>
+              <td>Resultados da pesquisa online</td>
+              <td>Mostrar nível de lealdade atual</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Painel de Sentimento (Pizza)</td>
+              <td>Comentários categorizados por sentimento</td>
+              <td>Proporção positivo/negativo/neutro</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Sazonalidade de Demanda (Barras)</td>
+              <td>Volume de pedidos por mês (últimos 2 anos)</td>
+              <td>Identificar picos previsíveis</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>Infográfico da Cadeia Produtiva</td>
+              <td>Etapas de produção + riscos mapeados</td>
+              <td>Mostrar onde surgem os gargalos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub">2.5 Etapas do Data Storytelling Aplicadas</h3>
+      <ul class="bl">
+        <li><strong style="min-width: 120px;">Coleta:</strong> integração das planilhas de produção, dados climáticos do
+          INMET, registros
+          logísticos e avaliações coletadas nas redes sociais.</li>
+        <li><strong style="min-width: 120px;">Organização:</strong> limpeza, padronização e estruturação dos dados em um
+          repositório unificado
+          (planilha mestre ou banco de dados relacional simples).</li>
+        <li><strong style="min-width: 120px;">Análise:</strong> identificação de padrões, correlações e anomalias por
+          meio de análise exploratória; médias, desvios, tendências e comparações sazonais.</li>
+        <li><strong style="min-width: 120px;">Narrativa:</strong> construção do roteiro de cinco atos com linguagem
+          acessível ao conselho gestor.
+        </li>
+        <li><strong style="min-width: 120px;">Apresentação:</strong> elaboração de slides ou painel interativo com
+          gráficos, mapas e indicadores
+          que suportem visualmente a narrativa e facilitem a tomada de decisão.</li>
+      </ul>
+    </section>
+
+    <hr class="dv" />
+
+    <!-- ── PASSO 3 ── -->
+    <section class="sec" id="s3">
+      <div class="sec-eye"><span class="chip">03</span>Privacidade & LGPD</div>
+      <h2 class="stitle">Mapeamento de Dados, Riscos e Conformidade</h2>
+
+      <p class="bt">A Lei Geral de Proteção de Dados Pessoais (Lei n.º 13.709/2018 - LGPD) estabelece, em seu Art. 37,
+        que o controlador e o operador devem manter registro das operações de tratamento de dados pessoais. Esse
+        registro é o fundamento do <strong>Data Mapping ou Inventário de Dados</strong>; um mapeamento sistemático de
+        quais dados pessoais a organização coleta, por que os coleta, como os processa, onde os armazena, com quem os
+        compartilha e por quanto tempo os retém.</p>
+      <p class="bt">Para a CANP, o Data Mapping é especialmente crítico porque a cooperativa lida com dados de duas
+        categorias distintas de titulares: os <strong>cooperados (pequenos produtores rurais, pessoas físicas)</strong>
+        e os <strong>consumidores finais dos produtos</strong>. O ambiente rural com conectividade limitada e o uso de
+        aplicativos não padronizados para transmissão de dados criam vulnerabilidades específicas que precisam ser
+        endereçadas.</p>
+
+      <h3 class="sub">3.1.2 Estrutura do Inventário de Dados (Data Mapping)</h3>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Dataset</th>
+              <th>Dados Pessoais</th>
+              <th>Finalidade</th>
+              <th>Base Legal</th>
+              <th>Armazenamento</th>
+              <th>Compartilhamento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cadastro de Cooperados</td>
+              <td>Nome, CPF, endereço, dados bancários, produção</td>
+              <td>Gestão associativa e repasse de renda</td>
+              <td><span class="mc">Art. 7°, V - Contrato</span></td>
+              <td>Servidor local / Nuvem</td>
+              <td>Contabilidade, MAPA</td>
+            </tr>
+            <tr>
+              <td>Rastreabilidade do Mel</td>
+              <td>ID do apicultor, localização do apiário, datas de colheita</td>
+              <td>Certificação e qualidade</td>
+              <td><span class="mc">Art. 7°, IX - Legítimo interesse</span></td>
+              <td>Planilhas / BD local</td>
+              <td>Certificadoras</td>
+            </tr>
+            <tr>
+              <td>Rastreabilidade do Café</td>
+              <td>ID do produtor, propriedade, lote, data torra</td>
+              <td>Rastreabilidade e qualidade</td>
+              <td><span class="mc">Art. 7°, IX - Legítimo interesse</span></td>
+              <td>Planilhas / BD local</td>
+              <td>CQI, compradores</td>
+            </tr>
+            <tr>
+              <td>Dados Climáticos</td>
+              <td>Sem dados pessoais (dados ambientais)</td>
+              <td>Gestão da produção</td>
+              <td><span class="mc">N/A</span></td>
+              <td>Sensores / API INMET</td>
+              <td>Uso interno</td>
+            </tr>
+            <tr>
+              <td>Clientes Finais</td>
+              <td>Nome, e-mail, endereço entrega, histórico de compras</td>
+              <td>Processamento de pedidos</td>
+              <td><span class="mc">Art. 7°, V - Contrato</span></td>
+              <td>Plataforma e-commerce</td>
+              <td>Transportadoras</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub">3.1.3 Riscos ao Longo do Ciclo de Vida dos Dados</h3>
+      <ul class="bl">
+        <li><strong style="min-width: 120px;">Coleta:</strong> uso de WhatsApp e formulários informais para transmissão
+          de dados entre cooperados e a sede; risco de coleta sem base legal clara e potencialmente excessiva (violação
+          do princípio da necessidade - Art. 6°, III).</li>
+        <li><strong style="min-width: 120px;">Transmissão:</strong> dados trafegam por aplicativos não criptografados em
+          redes rurais abertas ou
+          de baixa segurança; risco de interceptação, sem garantia de confidencialidade ou integridade.</li>
+        <li><strong style="min-width: 120px;">Armazenamento:</strong> planilhas em computadores locais sem backup, sem
+          controle de acesso e sem
+          criptografia; vulneráveis a falha de hardware, acesso não autorizado e ransomware.</li>
+        <li><strong style="min-width: 120px;">Uso:</strong> ausência de RBAC (Role-Based Access Control); qualquer
+          funcionário com acesso aos
+          sistemas pode visualizar dados pessoais de cooperados e clientes, violando o princípio do acesso mínimo
+          necessário.</li>
+        <li><strong style="min-width: 120px;">Descarte:</strong> sem política de descarte seguro; planilhas com dados
+          pessoais permanecem
+          armazenadas indefinidamente, em violação ao princípio da necessidade e ao direito ao esquecimento (Art. 18).
+        </li>
+      </ul>
+
+      <h3 class="sub">3.1.4 Controles Técnicos e Administrativos Recomendados</h3>
+      <p class="bt"><strong>Controles Técnicos:</strong></p>
+      <ul class="bl">
+        <li>Sistema centralizado em nuvem (Google Workspace ou Microsoft 365) com autenticação em dois fatores,
+          substituindo planilhas locais</li>
+        <li>Criptografia de dados em repouso e em trânsito. TLS/SSL para transmissão; AES-256 para armazenamento</li>
+        <li>Controle de acesso baseado em perfis (administrador, gestor, cooperado) - RBAC</li>
+        <li>Rotina automática de backup diário em local geográfico distinto (redundância)</li>
+        <li>Substituição de aplicativos de mensageria não corporativos por canais padronizados e auditáveis para
+          transmissão de dados de produção</li>
+      </ul>
+      <p class="bt"><strong>Controles Administrativos:</strong></p>
+      <ul class="bl no-col">
+        <li>Designação formal de <strong>DPO (Data Protection Officer)</strong> conforme exigido pelo Art. 41 da LGPD
+        </li>
+        <li>Elaboração e publicação de Política de Privacidade e Proteção de Dados, disponível no site da cooperativa e
+          entregue a todos os cooperados</li>
+        <li>Formalização de contratos de processamento de dados (Data Processing Agreements) com fornecedores que
+          acessam dados pessoais</li>
+        <li>Treinamentos periódicos de conscientização sobre proteção de dados para funcionários e cooperados</li>
+        <li>Política de retenção e descarte com prazos máximos definidos por categoria de dado pessoal</li>
+      </ul>
+
+      <h3 class="sub">3.2.2 Aplicação dos Princípios da LGPD ao Contexto Digital</h3>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Princípio LGPD</th>
+              <th>Aplicação à CANP</th>
+              <th>Boas Práticas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Finalidade (Art. 6°, I)</td>
+              <td>Dados coletados para entrega não devem ser usados para marketing sem consentimento</td>
+              <td>Separar base de dados de clientes por finalidade: entrega vs. marketing</td>
+            </tr>
+            <tr>
+              <td>Necessidade (Art. 6°, III)</td>
+              <td>Solicitar apenas nome, e-mail e endereço de entrega, não CPF se não obrigatório</td>
+              <td>Revisar formulários de cadastro e remover campos desnecessários</td>
+            </tr>
+            <tr>
+              <td>Adequação (Art. 6°, II)</td>
+              <td>Uso dos dados deve ser compatível com o contexto em que foram fornecidos</td>
+              <td>Não utilizar dados de clientes de e-commerce em pesquisas sem nova solicitação</td>
+            </tr>
+            <tr>
+              <td>Prevenção (Art. 6°, VIII)</td>
+              <td>Adotar medidas para evitar danos antes que ocorram</td>
+              <td>Implementar HTTPS, controle de acesso e monitoramento de incidentes</td>
+            </tr>
+            <tr>
+              <td>Responsabilização (Art. 6°, X)</td>
+              <td>A CANP responde pelos danos causados por tratamento inadequado</td>
+              <td>Manter registros de tratamento e evidências de conformidade</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub">3.2.3 Boas Práticas para Marketing, SAC e Gestão de Reputação</h3>
+      <p class="bt"><strong>Para o Marketing Digital:</strong> implementar double opt-in para a lista de e-mail
+        marketing, garantindo o consentimento inequívoco exigido pelo Art. 8° da LGPD. Disponibilizar link de
+        descadastramento (opt-out) em toda comunicação. Manter registro com data e hora de cada consentimento obtido.
+        Não utilizar dados de comportamento do consumidor para personalização de campanhas sem informar o titular.</p>
+      <p class="bt"><strong>Para o SAC:</strong> treinar a equipe para nunca expor dados pessoais em respostas públicas
+        nas redes sociais; sempre migrar para canal privado (mensagem direta ou e-mail) para tratar reclamações que
+        envolvam dados do pedido. Estabelecer SLA de resposta de 24 horas. Manter canal formal para exercício dos
+        direitos do titular (Art. 18): acesso, correção, portabilidade, eliminação e revogação de consentimento.</p>
+      <p class="bt"><strong>Para a Gestão de Reputação Digital:</strong> monitorar proativamente menções à marca com
+        ferramentas de Social Listening, possibilitando resposta rápida antes que comentários negativos se ampliem.
+        Publicar regularmente conteúdo que reforce qualidade, rastreabilidade e sustentabilidade. Responder a todas as
+        avaliações negativas com cordialidade, reconhecendo o problema e oferecendo solução.</p>
+    </section>
+
+    <hr class="dv" />
+
+    <!-- ── PASSO 4 ── -->
+    <section class="sec" id="s4">
+      <div class="sec-eye"><span class="chip">04</span>Governança de Dados</div>
+      <h2 class="stitle">Plano de Qualidade de Dados (PQD)</h2>
+
+      <p class="bt">A Governança de Dados é o conjunto de políticas, processos, papéis e responsabilidades que garantem
+        que os dados de uma organização sejam gerenciados de forma consistente, segura e alinhada às suas necessidades
+        estratégicas. Para a CANP, implementar uma estrutura básica de governança é condição fundamental para que
+        qualquer iniciativa de análise ou inteligência de mercado produza resultados confiáveis, <strong>dados de baixa
+          qualidade geram insights equivocados, que levam a decisões erradas.</strong></p>
+      <p class="bt">O DAMA-DMBOK (Data Management Body of Knowledge) define dez áreas de conhecimento em gestão de
+        dados, sendo a Qualidade de Dados uma das mais críticas. Este passo concentra-se no desenvolvimento do PQD para
+        o <strong>dataset de Colheita de Café</strong> da CANP, além da definição de Data Owners para os três datasets
+        críticos identificados.</p>
+
+      <h3 class="sub">4.2 Dimensões da Qualidade de Dados - Dataset de Colheita de Café</h3>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>Dimensão</th>
+              <th>Descrição</th>
+              <th>Problema Atual na CANP</th>
+              <th>Meta de Qualidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Completude</td>
+              <td>Todos os campos obrigatórios preenchidos</td>
+              <td>Campos de umidade e temperatura frequentemente em branco</td>
+              <td>≥ 95% dos campos críticos preenchidos</td>
+            </tr>
+            <tr>
+              <td>Consistência</td>
+              <td>Dados iguais em diferentes registros/fontes</td>
+              <td>Nomes de produtores escritos de formas diferentes em planilhas distintas</td>
+              <td>100% de padronização de nomes e IDs</td>
+            </tr>
+            <tr>
+              <td>Acurácia</td>
+              <td>Dado reflete a realidade com precisão</td>
+              <td>Estimativas de volume colhido sem pesagem formal</td>
+              <td>Pesagem formal em 100% dos lotes</td>
+            </tr>
+            <tr>
+              <td>Atualidade</td>
+              <td>Dado registrado no momento correto</td>
+              <td>Registros feitos dias após a colheita, perdendo precisão</td>
+              <td>Registro em até 24h da colheita</td>
+            </tr>
+            <tr>
+              <td>Unicidade</td>
+              <td>Sem registros duplicados</td>
+              <td>Mesmo lote registrado duas vezes em planilhas diferentes</td>
+              <td>Zero duplicatas (validação automática)</td>
+            </tr>
+            <tr>
+              <td>Validade</td>
+              <td>Dado dentro dos domínios esperados</td>
+              <td>Umidade registrada como texto ("bom", "ruim") em vez de valores numéricos (%)</td>
+              <td>100% de campos numéricos onde aplicável</td>
+            </tr>
+            <tr>
+              <td>Rastreabilidade</td>
+              <td>Origem e histórico do dado auditável</td>
+              <td>Sem registro de quem inseriu o dado e quando</td>
+              <td>Log de auditoria para todas as inserções</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub">4.3 Checklist de Implementação - Limpeza de Dados em 4 Fases</h3>
+
+      <div class="ph-title">Fase 1 - Diagnóstico</div>
+      <div class="ci">
+        <div class="cb"></div>Exportar todas as planilhas de colheita dos últimos 24 meses para um único arquivo
+        consolidado
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Identificar e listar todos os campos existentes (colunas) e seus tipos de dados atuais
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Calcular o percentual de valores nulos (vazios) por campo
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Identificar registros duplicados (mesmo produtor + mesma data + mesmo produto)
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Mapear inconsistências de nomenclatura (ex.: "João Silva", "J. Silva", "João S."
+        referindo-se ao mesmo cooperado)
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Identificar valores fora de domínio (ex.: umidade > 100%, data de colheita futura, peso
+        negativo)
+      </div>
+
+      <div class="ph-title">Fase 2 - Limpeza e Padronização</div>
+      <div class="ci">
+        <div class="cb"></div>Criar e aplicar dicionário de dados padronizado (nome do campo, tipo, unidade de medida e
+        domínio de valores válidos)
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Padronizar nomes de cooperados com base no cadastro oficial da cooperativa (chave
+        primária: CPF ou ID único)
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Converter todos os campos de umidade para formato numérico decimal (ex.: 12.5%)
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Converter campos de data para formato ISO 8601 (AAAA-MM-DD)
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Tratar valores nulos: campos não críticos → valor padrão documentado; campos críticos
+        (ex.: volume colhido) → "Dado Indisponível" + acionar Data Owner para verificação
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Eliminar registros duplicados, mantendo o mais recente e arquivando o duplicado para
+        auditoria
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Padronizar unidades de medida: peso sempre em kg; temperatura sempre em °C; volume de mel
+        sempre em kg
+      </div>
+
+      <div class="ph-title">Fase 3 - Validação e Controle</div>
+      <div class="ci">
+        <div class="cb"></div>Implementar regras de validação automática no sistema de entrada de dados (campo
+        "Umidade": aceita apenas 0 a 100; campo "Data Colheita": não aceita datas futuras)
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Realizar auditoria cruzada de 10% dos registros com documentos físicos originais
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Recalcular indicadores de qualidade (completude, unicidade, validade) e comparar com
+        baseline do Diagnóstico
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Documentar os resultados da limpeza em relatório de qualidade de dados
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Definir frequência de revisão periódica da qualidade dos dados (mínimo: mensal para dados
+        operacionais)
+      </div>
+
+      <div class="ph-title">Fase 4 - Monitoramento Contínuo</div>
+      <div class="ci">
+        <div class="cb"></div>Configurar dashboard de monitoramento de qualidade com alertas automáticos para violações
+        de regras
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Revisar e atualizar o dicionário de dados sempre que novos campos forem adicionados
+      </div>
+      <div class="ci">
+        <div class="cb"></div>Realizar treinamento trimestral com os cooperados responsáveis pelo preenchimento dos
+        registros de campo
+      </div>
+
+      <h3 class="sub">4.4 Definição de Data Owners por Dataset Crítico</h3>
+      <p class="bt">O Data Owner é o responsável pela integridade, qualidade e uso adequado de um conjunto de dados
+        específico dentro da organização. Não é necessariamente a pessoa que insere os dados, mas aquela que responde
+        por eles estrategicamente.</p>
+      <div class="og">
+        <div class="oc">
+          <div class="ods">Dataset</div>
+          <div class="oname">Clima</div>
+          <div class="orole">Técnico Agrícola da Cooperativa</div>
+          <div class="oresp">Coletar, validar e integrar dados climáticos à base produtiva; emitir alertas preventivos
+            ao gestor de produção.</div>
+        </div>
+        <div class="oc">
+          <div class="ods">Dataset</div>
+          <div class="oname">Produção - Café e Mel</div>
+          <div class="orole">Gerente de Produção / Coord. de Qualidade</div>
+          <div class="oresp">Garantir completude e acurácia dos registros de colheita, processamento e torra; validar
+            dados antes da integração ao sistema central.</div>
+        </div>
+        <div class="oc">
+          <div class="ods">Dataset</div>
+          <div class="oname">Logística</div>
+          <div class="orole">Coord. de Logística / Resp. pela Frota</div>
+          <div class="oresp">Registrar datas e condições de transporte; rastrear desvios de prazo; manter base
+            atualizada de propriedades e rotas.</div>
+        </div>
+        <div class="oc">
+          <div class="ods">Dataset</div>
+          <div class="oname">Clientes / Reputação</div>
+          <div class="orole">Responsável de Marketing / Atendimento</div>
+          <div class="oresp">Centralizar avaliações, categorizar feedbacks, alimentar o monitoramento de NPS e reputação
+            digital.</div>
+        </div>
+      </div>
+      <div class="cbox b">
+        <div class="clbl">Accountability</div>
+        <p>Cada Data Owner deve ter sua responsabilidade formalmente documentada em descrição de cargo ou instrumento
+          normativo interno, garantindo responsabilização conforme os princípios da LGPD e da boa governança
+          corporativa.</p>
+      </div>
+    </section>
+
+    <hr class="dv" />
+
+    <!-- ── PASSO 5 ── -->
+    <section class="sec" id="s5">
+      <div class="sec-eye"><span class="chip">05</span>Dashboards</div>
+      <h2 class="stitle">DIOM - Dashboard de Inteligência Operacional e de Mercado</h2>
+
+      <p class="bt">Um dashboard é uma interface visual que consolida métricas e indicadores relevantes em uma única
+        tela, permitindo ao gestor monitorar o desempenho da organização em tempo real ou quase real. O DIOM proposto
+        para a CANP vai além de um simples painel de controle: ele integra dados de produção, logística, mercado e
+        reputação em uma visão unificada, permitindo a <strong>identificação precoce de problemas e a ação
+          proativa.</strong></p>
+      <p class="bt">Dashboards eficazes devem apresentar o contexto certo, para a pessoa certa, no momento certo. Para a
+        CANP, isso significa construir visões diferenciadas para o gestor de produção, o coordenador de logística e a
+        diretoria. Cada audiência com seus KPIs mais relevantes destacados.</p>
+
+      <h3 class="sub">5.2 Fontes de Dados Cruciais para o DIOM</h3>
+      <ol class="nl">
+        <li><strong>Sistema de Produção (ERP / Planilhas Integradas):</strong> volume colhido por lote, tempo de
+          secagem, umidade e temperatura dos terreiros e armazéns, data e condições de torrefação. É a fonte primária da
+          qualidade do produto; sem monitorar as variáveis de processo, não é possível identificar a causa das
+          inconsistências de sabor entre lotes, o principal problema reputacional da CANP.</li>
+        <li><strong>Plataformas de Vendas e Atendimento (Marketplaces, E-commerce, CRM):</strong> volume de pedidos por
+          período e produto, prazos prometidos vs. realizados, taxa de reclamações, NPS, avaliações por estrelas.
+          Conecta diretamente a operação à percepção do cliente, possibilitando ação antes que a reputação seja afetada
+          em escala.</li>
+        <li><strong>Sistemas Climáticos (INMET / Sensores IoT nas Propriedades):</strong> temperatura e pluviosidade
+          diárias, alertas de geada, umidade relativa do ar, previsão para os próximos 10 dias. O clima é o principal
+          fator exógeno de risco; integrar esses dados permite antecipar decisões antes que os impactos se materializem
+          em perdas.</li>
+      </ol>
+
+      <h3 class="sub">5.3 KPIs por Área Crítica e Lógica de Ação Proativa</h3>
+      <div class="kg">
+        <div class="kc prod">
+          <span class="kbadge prod">Produção</span>
+          <div class="kname">Taxa de Conformidade de Lote</div>
+          <div class="kfml">TCL = (Lotes Conformes / Total de Lotes Processados) × 100</div>
+          <div class="klevs">
+            <div class="klv">
+              <div class="dot g"></div>≥ 90% - dentro do padrão; nenhuma ação necessária
+            </div>
+            <div class="klv">
+              <div class="dot y"></div>75–89% - investigar causas; revisar parâmetros
+            </div>
+            <div class="klv">
+              <div class="dot r"></div>&lt; 75% - suspender despachos do lote afetado
+            </div>
+          </div>
+        </div>
+        <div class="kc log">
+          <span class="kbadge log">Logística</span>
+          <div class="kname">On-Time Delivery Rate (OTDR)</div>
+          <div class="kfml">OTDR = (Pedidos Entregues no Prazo / Total Despachados) × 100</div>
+          <div class="klevs">
+            <div class="klv">
+              <div class="dot g"></div>≥ 95% - operando dentro do padrão
+            </div>
+            <div class="klv">
+              <div class="dot y"></div>85–94% - revisar rotas; considerar parceiros alternativos
+            </div>
+            <div class="klv">
+              <div class="dot r"></div>&lt; 85% - protocolo de comunicação e compensação
+            </div>
+          </div>
+        </div>
+        <div class="kc rep">
+          <span class="kbadge rep">Reputação Digital</span>
+          <div class="kname">Índice de Sentimento Digital (ISD)</div>
+          <div class="kfml">ISD = (Positivos − Negativos) / Total × 100 &nbsp;[−100 a +100]</div>
+          <div class="klevs">
+            <div class="klv">
+              <div class="dot g"></div>≥ +40 - reputação positiva
+            </div>
+            <div class="klv">
+              <div class="dot y"></div>+10 a +39 - monitorar temas recorrentes
+            </div>
+            <div class="klv">
+              <div class="dot r"></div>&lt; +10 - acionar plano de gerenciamento de crise
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cbox g">
+        <div class="clbl">Produção - Decisão Proativa</div>
+        <p>Se a TCL cair abaixo de 75% por dois dias consecutivos, o gestor de produção deve acionar o mestre de torra
+          para revisão dos parâmetros do processo e o Data Owner de Clima para verificar se condições atmosféricas
+          atípicas estão contribuindo. Despachos do lote afetado devem ser suspensos e clientes com pedidos em aberto
+          comunicados sobre possíveis atrasos.</p>
+      </div>
+      <div class="cbox b">
+        <div class="clbl">Logística - Decisão Proativa</div>
+        <p>Se o OTDR cair abaixo de 90% durante períodos de previsão de chuvas intensas (integração com fonte
+          climática), o coordenador de logística deve antecipar o redesenho de rotas e comunicar ajustes de prazo aos
+          clientes com <strong>48 horas de antecedência</strong>. OTDR &lt; 85% por uma semana: acionar protocolo de
+          compensação; desconto no próximo pedido ou frete grátis; acionar Data Owner de Logística para diagnóstico
+          imediato.</p>
+      </div>
+      <div class="cbox">
+        <div class="clbl">Reputação - Decisão Proativa</div>
+        <p>Se o ISD cair abaixo de +20 por duas semanas consecutivas, o Responsável de Marketing deve apresentar à
+          diretoria um relatório de diagnóstico cruzando os comentários negativos com os dados de OTDR e de conformidade
+          de lote, identificando a causa raiz. ISD &lt; +10: ativar plano de crise reputacional; responder proativamente
+          a todos os comentários negativos em até <strong>6 horas</strong>; comunicar à diretoria e ao conselho gestor.
+        </p>
+      </div>
+
+      <h3 class="sub">5.4 Estrutura Visual do DIOM</h3>
+      <div class="dg">
+        <div class="dc">
+          <div class="daud">Visão</div>
+          <div class="dname">Executiva</div>
+          <div class="dbody">Diretoria e Conselho Gestor. Os três KPIs principais com semáforos coloridos e tendências
+            dos últimos 30 dias. Atualização semanal. Recomendado: Power BI ou Google Looker Studio.</div>
+        </div>
+        <div class="dc">
+          <div class="daud">Visão</div>
+          <div class="dname">Operacional</div>
+          <div class="dbody">Gestores de Produção e Logística. Detalhamento por lote, rota, cooperado e período.
+            Gráficos de linha para tendências, mapas de calor para propriedades críticas, alertas climáticos integrados.
+            Atualização diária.</div>
+        </div>
+        <div class="dc">
+          <div class="daud">Visão</div>
+          <div class="dname">Mercado</div>
+          <div class="dbody">Marketing e Atendimento. Volume de comentários por plataforma, análise de sentimento por
+            produto (Café vs. Mel), ranking de reclamações por categoria, evolução do NPS. Atualização semanal ou em
+            tempo real via API.</div>
+        </div>
+      </div>
+
+      <h3 class="sub">5.5 Protocolo Consolidado de Ação</h3>
+      <div class="tw">
+        <table>
+          <thead>
+            <tr>
+              <th>KPI</th>
+              <th>Limite</th>
+              <th>Período</th>
+              <th>Ação Imediata</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="mc">TCL</span></td>
+              <td>&lt; 75%</td>
+              <td>2 dias consecutivos</td>
+              <td>Suspender despachos do lote; revisar secagem/torra; acionar mestre de torra e verificar condições
+                climáticas</td>
+            </tr>
+            <tr>
+              <td><span class="mc">OTDR</span></td>
+              <td>&lt; 85%</td>
+              <td>1 semana</td>
+              <td>Comunicar proativamente clientes impactados; redesenhar rotas críticas; verificar integração com
+                previsão climática</td>
+            </tr>
+            <tr>
+              <td><span class="mc">ISD</span></td>
+              <td>&lt; +10</td>
+              <td>2 semanas consecutivas</td>
+              <td>Ativar plano de crise reputacional; diagnóstico cruzado para diretoria; intensificar respostas nas
+                redes sociais</td>
+            </tr>
+            <tr>
+              <td><span class="mc">OTDR + ISD</span></td>
+              <td>&lt; 85% / &lt; +20</td>
+              <td>Mesmo período</td>
+              <td>Reunião de emergência com diretoria; comunicado público de transparência; revisão de todos os pedidos
+                em aberto</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <hr class="dv" />
+
+    <!-- CONSIDERAÇÕES FINAIS -->
+    <section class="sec">
+      <div class="final">
+        <div class="sec-eye" style="margin-bottom:0.55rem;"><span class="chip"
+            style="border-color:var(--gold);">↗</span>Considerações Finais</div>
+        <h2 class="stitle">Da Gestão Reativa à Inteligência Proativa</h2>
+
+        <p class="bt">Os cinco passos deste case demonstraram como a integração de técnicas de Inteligência de Mercado e
+          Análise de Dados pode transformar a realidade operacional e reputacional da CANP. O Passo 1 evidenciou que a
+          cooperativa dispõe de diversas fontes de dados relevantes; redes sociais, marketplaces, dados climáticos e
+          registros transacionais, mas carece de uma estratégia estruturada de coleta e integração. Um plano de Web
+          Analytics bem desenhado, com o uso combinado de APIs oficiais, social listening e pesquisa de mercado online,
+          é o primeiro passo para transformar dados brutos em inteligência acionável.</p>
+
+        <p class="bt">O Passo 2 mostrou que a narrativa dos dados é tão importante quanto a análise em si. A diretoria e
+          o conselho gestor tomam decisões com base em argumentos persuasivos e visuais, e o storyboard proposto,
+          conectando clima, logística, produção e reputação digital em uma cadeia de causa e efeito; oferece exatamente
+          esse instrumento.</p>
+
+        <p class="bt">O Passo 3 abordou a responsabilidade legal da cooperativa no tratamento de dados pessoais de
+          cooperados e consumidores, destacando que a conformidade com a LGPD não é apenas uma obrigação jurídica, mas
+          também um diferencial competitivo em um mercado onde a transparência e a confiança são valores crescentemente
+          valorizados pelo consumidor gourmet.</p>
+
+        <p class="bt">O Passo 4 demonstrou que dados de qualidade são o alicerce de qualquer estratégia de inteligência.
+          O Plano de Qualidade de Dados proposto, com suas sete dimensões, checklist em quatro fases e definição de Data
+          Owners, oferece à CANP um roteiro prático e adaptado à sua realidade de pequena cooperativa agroindustrial.
+        </p>
+
+        <p class="bt">O Passo 5 apresentou o DIOM com três KPIs estratégicos e uma lógica clara de ação proativa. A
+          visualização integrada de produção, logística e reputação digital em um único painel é a síntese de todo o
+          trabalho desenvolvido: <strong>informação certa, para a pessoa certa, no momento certo.</strong></p>
+
+        <p class="bt" style="margin-top:1.5rem;">A implementação das recomendações propostas não exige necessariamente
+          grandes investimentos em tecnologia. O caminho começa pela organização e integração das informações que já
+          existem; dispersas em planilhas, anotações e avaliações online e avança gradualmente para soluções mais
+          sofisticadas de análise e automação. A CANP possui os ingredientes fundamentais para o sucesso: produtos de
+          qualidade, know-how acumulado e uma base de consumidores que acredita na proposta de valor da cooperativa.
+          <strong>A inteligência de dados é o instrumento que pode elevar essa proposta a um novo patamar de excelência
+            operacional e reputacional.</strong>
+        </p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <p>© 2026 Rafael Trindade. Todos os direitos reservados.</p>
+  </footer>
+  <a href="https://rafa-trindade.github.io/" class="floating-back">← Portfólio</a>
+  <script>
+    // Top progress bar
+    const bar = document.getElementById('topbar');
+    window.addEventListener('scroll', () => {
+      const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+      bar.style.transform = `scaleX(${pct})`;
+    }, { passive: true });
+
+    // Section reveal
+    const obs = new IntersectionObserver(
+      entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); }),
+      { threshold: 0.05 }
+    );
+    document.querySelectorAll('.sec').forEach(el => obs.observe(el));
+  </script>
+</body>
+
+</html>

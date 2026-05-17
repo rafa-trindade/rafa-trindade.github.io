@@ -263,7 +263,9 @@ class AboutMe:
 class Portfolio:
     projects: List[Project] = field(default_factory=list)
     cases: List[Case] = field(default_factory=list)
-    products: List[Product] = field(default_factory=list)</code></pre>
+    products: List[Product] = field(default_factory=list)
+    researches: List[Research] = field(default_factory=list)
+    articles: List[Articles] = field(default_factory=list)</code></pre>
 
       <h1>
         <code class="python" style="display:block; padding:20px 12px;">
@@ -466,12 +468,19 @@ class Portfolio:
 
             <td>
               <div style="position: relative;">
-                <a href="https://github.com/rafa-trindade" target="_blank">
-                  <img
-                    src="https://github-readme-stats-rafatrindade.vercel.app/api/top-langs/?username=rafa-trindade&layout=compact&theme=github_dark_dimmed&bg_color=151B23&hide_title=false&card_width=390&langs_count=4&exclude_repo=rafa-trindade.github.io,rafa-trindade,kaggle-datahub,github-readme-stats-rafatrindade,oncoped-360,jornada-sql,local-data-infra,web-embritania,controle-contas,pdp-hospedagem,petstore-pipeline,petstore-bi,b2b-grupotamburi,bi-rafatrindade,datafaker-rafatrindade,petstore-etl,petstore-scraping,dashboard-grupotamburi,dashboard-rafatrindade,dashboard-elisaagro,contador-python&size_weight=0.5&count_weight=0.5&hide_progress" />
+                <a href="https://rafa-trindade.github.io/cases/canp" target="_blank">
+                  <img src="docs/canp.png" alt="Imagem do projeto" style="width: 100%; border-radius: 5px;" />
                 </a>
+                <div class="project-badges-screen">
+                  <a href="https://rafa-trindade.github.io/cases/canp" target="_blank">
+                    <img
+                      src="https://img.shields.io/badge/-Case%20de%20Estudo-2B5482?style=flat&logo=readthedocs&logoColor=fff&labelColor=1D3557" />
+                  </a>
+                </div>
               </div>
             </td>
+            <td></td>
+            <td></td>
 
 
           </tr>
@@ -599,7 +608,7 @@ class Portfolio:
         <code class="python" style="display:block; padding:20px 12px;">
           📦 
           <span style="color:#D1A7FD; font-weight:500;">Portfolio</span
-          ><span style="font-weight:500;">.research[]</span>
+          ><span style="font-weight:500;">.researches[]</span>
           <span style="color:#8b949e; opacity:.6; font-weight:normal;">
             # open data & research initiatives
           </span>
