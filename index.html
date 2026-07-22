@@ -729,64 +729,8 @@ class Portfolio:
       </h1>
 
       <div class="article-grid">
-        <div class="article-grid-row">
-
-          <div class="article-card-wrap">
-            <a href="https://rafa-trindade.medium.com/datahub-brasil-reposit%C3%B3rio-unificado-de-sa%C3%BAde-p%C3%BAblica-e-demografia-do-brasil-70604e793ec2"
-              target="_blank" class="article-card">
-              <div class="article-meta">
-                <div class="article-tags">
-                  <span class="article-tag">Data Engineering</span>
-                  <span class="article-tag">Kaggle</span>
-                  <span class="article-tag">Saúde Pública</span>
-                </div>
-                <!-- Informação adicionada ao lado da data -->
-                <span class="article-date">Jul 2026</span>
-              </div>
-              <h3 class="article-title">📄 DataHub Brasil: Repositório Unificado de Saúde Pública e Demografia do Brasil</h3>
-              <p class="article-excerpt">Do CNES ao SIH/SUS. Tudo centralizado, atualizado e disponível em um dataset público no Kaggle.</p>
-              <span class="article-link">Ler no Medium ↗</span>
-            </a>
-          </div>
-
-          <div class="article-card-wrap">
-            <a href="https://medium.com/@rafa-trindade/onco-360-uma-vis%C3%A3o-integral-da-oncologia-na-sa%C3%BAde-p%C3%BAblica-do-brasil-d4a48237c05b"
-              target="_blank" class="article-card">
-              <div class="article-meta">
-                <div class="article-tags">
-                  <span class="article-tag">Data Engineering</span>
-                  <span class="article-tag">Kaggle</span>
-                  <span class="article-tag">Saúde Pública</span>
-                </div>
-                <!-- Informação adicionada ao lado da data -->
-                <span class="article-date">Jul 2026</span>
-              </div>
-              <h3 class="article-title">📄 Onco-360: Uma Visão Integral da Oncologia na Saúde Pública do Brasil
-              </h3>
-              <p class="article-excerpt">Dataset público com mortalidade, rede assistencial, procedimentos SUS e repasses federais sobre oncologia no Brasil. Disponível no Kaggle.</p>
-              <span class="article-link">Ler no Medium ↗</span>
-            </a>
-          </div>
-
-          <div class="article-card-wrap">
-            <a href="https://rafa-trindade.medium.com/aws-para-engenheiros-de-dados-parte-3-aws-organizations-scps-governan%C3%A7a-multi-conta-97f8ddbe0a4b"
-              target="_blank" class="article-card">
-              <div class="article-meta">
-                <div class="article-tags">
-                  <span class="article-tag">AWS</span>
-                  <span class="article-tag">Data Engineering</span>
-                  <span class="article-tag">Cloud Computing</span>
-                </div>
-                <!-- Informação adicionada ao lado da data -->
-                <span class="article-date">Jul 2026</span>
-              </div>
-              <h3 class="article-title">📄 AWS para Engenheiros de Dados (Parte 3): AWS Organizations + SCPs (Governança Multi-Conta)</h3>
-              <p class="article-excerpt">Domine AWS Organizations e SCPs: construa uma governança multi-conta segura e escalável para seus pipelines de Engenharia de Dados. 
-              </p>
-              <span class="article-link">Ler no Medium ↗</span>
-            </a>
-          </div>
-
+        <div class="article-grid-row" id="medium-articles">
+          <!-- Cards serão injetados aqui via JavaScript -->
         </div>
       </div>
 
@@ -809,6 +753,70 @@ class Portfolio:
     </main>
 
   </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Seu usuário do Medium
+    const mediumUser = "@rafa-trindade";
+    const rssUrl = `https://medium.com/feed/${mediumUser}`;
+    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`;
+
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('medium-articles');
+        let html = '';
+
+        // Pegar apenas os 3 posts mais recentes
+        const posts = data.items.slice(0, 3);
+
+        posts.forEach(post => {
+          // 1. Formatar a data (ex: 2026-07-22 -> Jul 2026)
+          const dateObj = new Date(post.pubDate);
+          const formattedDate = dateObj.toLocaleDateString('pt-BR', {
+            day: '2-digit',
+            month: '2-digit',
+            year: '2-digit'
+          });
+
+          // 2. Extrair e formatar as tags (limitado a 3 para não quebrar o layout)
+          const tagsHtml = post.categories.slice(0, 3).map(tag =>
+            `<span class="article-tag">${tag}</span>`
+          ).join('');
+
+          // 3. Limpar as tags HTML que vêm no 'description' do Medium para gerar o resumo
+          const tempDiv = document.createElement("div");
+          tempDiv.innerHTML = post.description;
+          const textContent = tempDiv.textContent || tempDiv.innerText || "";
+          const excerpt = textContent.substring(0, 110) + '...'; 
+
+          // 4. Montar o card preservando suas classes CSS
+          html += `
+            <div class="article-card-wrap">
+              <a href="${post.link}" target="_blank" class="article-card">
+                <div class="article-meta">
+                  <div class="article-tags">
+                    ${tagsHtml}
+                  </div>
+                  <span class="article-date">${formattedDate}</span>
+                </div>
+                <h3 class="article-title">📄 ${post.title}</h3>
+                <p class="article-excerpt">${excerpt}</p>
+                <span class="article-link">Ler no Medium ↗</span>
+              </a>
+            </div>
+          `;
+        });
+
+        // Injeta os cards no HTML
+        container.innerHTML = html;
+      })
+      .catch(error => {
+        console.error('Erro ao buscar os artigos do Medium:', error);
+        document.getElementById('medium-articles').innerHTML = '<p style="color: #8b949e; text-align: center; width: 100%;">Não foi possível carregar os artigos no momento.</p>';
+      });
+  });
+</script>
 
 </body>
 
