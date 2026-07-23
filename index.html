@@ -754,7 +754,7 @@ class Portfolio:
 
   </div>
 
-  <script>
+ <script>
   document.addEventListener("DOMContentLoaded", function () {
     // Seu usuário do Medium
     const mediumUser = "@rafa-trindade";
@@ -771,29 +771,43 @@ class Portfolio:
         const posts = data.items.slice(0, 3);
 
         posts.forEach(post => {
-          // 1. Formatar a data (ex: 2026-07-22 -> Jul 2026)
+          // 1. Formatar a data (com o ano em 4 dígitos)
           const dateObj = new Date(post.pubDate);
           const formattedDate = dateObj.toLocaleDateString('pt-BR', {
             day: '2-digit',
             month: '2-digit',
-            year: '2-digit'
+            year: 'numeric'
           });
 
-          // 2. Extrair e formatar as tags (limitado a 3 para não quebrar o layout)
+          // 2. Extrair e formatar as tags
           const tagsHtml = post.categories.slice(0, 3).map(tag =>
             `<span class="article-tag">${tag}</span>`
           ).join('');
 
-          // 3. Limpar as tags HTML que vêm no 'description' do Medium para gerar o resumo
+          // 3. Limpar as tags HTML do 'description' para gerar o resumo
           const tempDiv = document.createElement("div");
           tempDiv.innerHTML = post.description;
           const textContent = tempDiv.textContent || tempDiv.innerText || "";
           const excerpt = textContent.substring(0, 110) + '...'; 
 
-          // 4. Montar o card preservando suas classes CSS
+          // 4. Capturar a imagem de capa do post
+          // O rss2json geralmente traz em 'thumbnail'. Caso falhe, buscamos direto no HTML da descrição.
+          let coverImage = post.thumbnail;
+          if (!coverImage) {
+            const imgMatch = post.description.match(/<img[^>]+src="([^">]+)"/);
+            if (imgMatch) coverImage = imgMatch[1];
+          }
+
+        // 5. Configurar variável CSS com a imagem
+          let bgStyle = "";
+          if (coverImage) {
+            bgStyle = `style="--bg-image: url('${coverImage}');"`;
+          }
+
+          // 6. Montar o card
           html += `
             <div class="article-card-wrap">
-              <a href="${post.link}" target="_blank" class="article-card">
+              <a href="${post.link}" target="_blank" class="article-card" ${bgStyle}>
                 <div class="article-meta">
                   <div class="article-tags">
                     ${tagsHtml}

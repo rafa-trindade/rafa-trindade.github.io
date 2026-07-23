@@ -337,12 +337,53 @@ img {
   height: 100%;
   box-sizing: border-box;
   transition: border-color 0.2s, background 0.2s;
+  
+  /* NOVAS PROPRIEDADES AQUI */
+  position: relative; /* Necessário para a imagem de fundo não vazar */
+  overflow: hidden;   /* Impede que a imagem passe das bordas arredondadas */
+}
+
+.article-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.10; /* Opacidade bem suave */
+  
+  /* O SEGREDO AQUI: Borrar a imagem para o texto dela não brigar com o seu HTML */
+  filter: blur(3px); 
+  
+  /* Um pequeno zoom para as bordas do desfoque não vazarem branco/transparente */
+  transform: scale(1.05); 
+  
+  z-index: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.article-meta,
+.article-title,
+.article-excerpt,
+.article-link {
+  position: relative;
+  z-index: 1;
 }
 
 .article-card:hover {
   border-color: #2B5482;
   background: #1a2130;
   text-decoration: none;
+}
+
+/* EFEITO EXTRA: Faz a imagem "acender" de leve ao passar o mouse */
+.article-card:hover::before {
+  opacity: 0.20; 
+  filter: blur(1.5px); 
 }
 
 .article-meta {
@@ -358,6 +399,8 @@ img {
   gap: 4px;
 }
 
+/* --- DAQUI PARA BAIXO FORAM APLICADAS AS CORREÇÕES DE COR E LEGIBILIDADE --- */
+
 .article-tag {
   font-size: 11px;
   background: #1D3557;
@@ -372,6 +415,7 @@ img {
   color: #adbac7;
   white-space: nowrap;
   padding-top: 2px;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Adicionada transição */
 }
 
 .article-title {
@@ -380,6 +424,8 @@ img {
   color: #539bf5;
   margin: 0;
   line-height: 1.4;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); 
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Adicionada transição */
 }
 
 .article-excerpt {
@@ -388,13 +434,43 @@ img {
   margin: 0;
   line-height: 1.6;
   flex: 1;
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Adicionada transição */
 }
 
 .article-link {
-  font-size: 12px;
-  color: #539bf5;
+  font-size: 13px;
+  font-weight: 500;
+  color: #58a6ff;
   margin-top: 4px;
+  display: inline-block;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  transition: color 0.3s ease, text-shadow 0.3s ease; /* Ajustada transição */
 }
+
+/* ========================================================
+   NOVOS EFEITOS DE HOVER NOS TEXTOS
+======================================================== */
+
+/* O Título fica num azul mais claro e vibrante, e a sombra escurece */
+.article-card:hover .article-title {
+  color: #d7e4ef; 
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 1); 
+}
+
+/* O Resumo e a Data ficam num cinza mais claro/brilhante */
+.article-card:hover .article-excerpt,
+.article-card:hover .article-date {
+  color: #c9d1d9; 
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 1);
+}
+
+/* O Link ganha o mesmo brilho */
+.article-card:hover .article-link {
+  color: #79c0ff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+}
+
+/* ======================================================== */
 
 .article-see-all {
   font-size: 12px;
