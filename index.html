@@ -809,7 +809,7 @@ class Portfolio:
           const tempDiv = document.createElement("div");
           tempDiv.innerHTML = post.description;
           const textContent = tempDiv.textContent || tempDiv.innerText || "";
-          const excerpt = textContent.substring(0, 110) + '...'; 
+          const excerpt = textContent.substring(0, 140) + '...'; 
 
           // 4. Capturar a imagem de capa do post
           // O rss2json geralmente traz em 'thumbnail'. Caso falhe, buscamos direto no HTML da descrição.
