@@ -48,7 +48,6 @@
                     </svg>
                 </a>
 
-
                 <a href="https://linkedin.com/in/rafatrindade" target="_blank" rel="noopener noreferrer"
                     class="header-icon" title="LinkedIn">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -56,6 +55,7 @@
                             d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                 </a>
+                
                 <a href="https://github.com/rafa-trindade" target="_blank" rel="noopener noreferrer" class="header-icon"
                     title="GitHub">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -121,7 +121,7 @@
         <section class="section fade-in-section">
             <h2 class="section-title">Resumo Profissional</h2>
             <p class="section-text2">
-                <b>Engenheiro de Dados & Analytics</b> combinando sólida base técnica com a maturidade executiva de quem já esteve à frente de operações de negócios. Focado na construção hands-on de pipelines ETL/ELT e arquiteturas escaláveis de ponta a ponta (Python, SQL, Airflow, dbt, Cloud). Trago a visão de quem entende o impacto dos dados na margem de lucro, aliada à postura focada na execução técnica diária. Busco atuar no desenvolvimento e otimização de infraestruturas de dados, compondo times colaborativos onde eu possa aplicar fundamentos sólidos, governança e entregar valor sustentável desde o primeiro dia.
+                <b>Engenheiro de Dados & Analytics</b> combinando sólida base técnica com a maturidade executiva de quem já esteve à frente de operações de negócios. Focado na construção hands-on de pipelines ETL/ELT e arquiteturas escaláveis de ponta a ponta. Trago a visão de quem entende o impacto dos dados na margem de lucro, aliada à postura focada na execução técnica diária. Busco atuar no desenvolvimento e otimização de infraestruturas de dados, compondo times colaborativos onde eu possa aplicar fundamentos sólidos, governança e entregar valor sustentável desde o primeiro dia. Autor de artigos técnicos sobre arquiteturas modernas e a importância dos fundamentos na engenharia de dados.
             </p>
         </section>
 
@@ -204,7 +204,8 @@
                         <h3 class="project-title">DataHub Brasil | Open Data Platform</h3>
                         <p class="project-description">
                             • Arquitetura e pipeline de dados unificado integrando 26 fontes públicas (DATASUS/IBGE) e +3 bilhões de registros.<br>
-                            • Conversão orquestrada de arquivos legados (.dbc) para formato Parquet. Publicação contínua e documentada de datasets abertos no Kaggle e ecossistema de dados para consumo da comunidade técnica e científica.
+                            • Deploy de infraestrutura híbrida completa: processamento assíncrono em ambiente local orquestrado com uma plataforma de dados self-hosted (VPS), garantindo disaster recovery, health checks e pipelines de CI/CD para atualização de serviços.<br>
+                            • Publicação contínua e documentada de datasets abertos no Kaggle e ecossistema de dados para consumo da comunidade técnica e científica.
                         </p>
                         <div class="tech-tags">
                             <span class="tech-tag">Python</span>
@@ -212,25 +213,6 @@
                             <span class="tech-tag">Apache Airflow</span>
                             <span class="tech-tag">Kaggle</span>
                             <span class="tech-tag">Docker</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://rafa-trindade.github.io/" target="_blank"
-                    style="text-decoration: none; color: inherit; display: block;">
-                    <div class="project-card">
-                        <h3 class="project-title">Portfólio Técnico & Publicações</h3>
-                        <p class="project-description">
-                            • Portfólio público com projetos de Engenharia de Dados, Cases Técnicos e Sistemas Proprietários.<br>
-                            • Publicação de artigos técnicos no Medium com foco em fundamentos de engenharia de dados, arquiteturas modernas e IA aplicada.<br>
-                            • Construção e orquestração de pipelines para publicação de Datasets públicos no Kaggle, com foco em pesquisa aplicada e democratização de dados.
-                        </p>
-                        <div class="tech-tags">
-                            <span class="tech-tag">GitHub</span>
-                            <span class="tech-tag">Medium</span>
-                            <span class="tech-tag">Kaggle</span>
-                            <span class="tech-tag">Open Data</span>
-                            <span class="tech-tag">Data Platforms</span>
                         </div>
                     </div>
                 </a>
@@ -242,6 +224,20 @@
             <h2 class="section-title">Experiência Profissional</h2>
             <div class="experience-list">
 
+                <!-- Nova Experiência Adicionada -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-position">Data Engineer | Open Source Maintainer</h3>
+                        <span class="experience-period">Dezembro 2025 – o momento</span>
+                    </div>
+                    <p class="experience-company">Self-Employed • Remoto</p>
+                    <p class="experience-description">
+                        • Arquitetura e sustentação de pipelines assíncronos para extração, processamento local (idempotência e controle de memória) e orquestração de bilhões de registros de dados públicos.<br>
+                        • Desenvolvimento da plataforma de dados (Self-Hosted/VPS) que atua como fundação para a hospedagem e distribuição do projeto. Orquestração via Docker Compose integrando Data Lake (MinIO), Query Engine (Dremio), PostgreSQL e Redis.<br>
+                        • Modelagem e disponibilização contínua de datasets públicos em formato colunar otimizado (Parquet) via streaming da VPS para o Kaggle, focando em governança e democratização de dados.
+                    </p>
+                </div>
+
                 <div class="experience-item">
                     <div class="experience-header">
                         <h3 class="experience-position">Líder de Operações & Tech | Gestor Geral</h3>
@@ -249,10 +245,8 @@
                     </div>
                     <p class="experience-company">Hotel Pousada da Ponte e Restaurante Dona Nize • Britânia, GO</p>
                     <p class="experience-description">
-                        • Desenvolvimento e arquitetura de sistemas proprietários (PMS de Hotelaria, Plataforma de Análise de Dados, B2B e Portal de Turismo) construídos do zero, utilizando Linguagem C# e Python e Banco de Dados SQL Server e PostgreSQL.
-                        <br>
-                        • Construção de pipelines de dados ETL/ELT e rotinas de análise para controle financeiro e desempenho operacional, com foco em otimização de consultas SQL e confiabilidade das informações para a tomada de decisão.
-                        <br>
+                        • Desenvolvimento e arquitetura de sistemas proprietários (PMS de Hotelaria, Plataforma de Análise de Dados, B2B e Portal de Turismo) construídos do zero, utilizando Linguagem C# e Python e Banco de Dados SQL Server e PostgreSQL.<br>
+                        • Construção de pipelines de dados ETL/ELT e rotinas de análise para controle financeiro e desempenho operacional, com foco em otimização de consultas SQL e confiabilidade das informações para a tomada de decisão.<br>
                         • Liderança e gestão de equipe de 40 colaboradores e relacionamento com clientes corporativos.
                     </p>
                 </div>
@@ -275,8 +269,7 @@
                     </div>
                     <p class="experience-company">Prime Control • Curitiba, PR</p>
                     <p class="experience-description">
-                        • Atuação de ponta a ponta no ciclo de garantia de qualidade de software.
-                        <br>
+                        • Atuação de ponta a ponta no ciclo de garantia de qualidade de software.<br>
                         • Planejamento, estruturação e execução de Processos de Teste e Qualidade de Software.
                     </p>
                 </div>
@@ -304,11 +297,6 @@
                         <span class="education-period">2025 - 2026</span>
                     </div>
                     <p class="education-institution">PoD Academy</p>
-                    <div class="education-highlights">
-                        <span>• Engenharia de Dados</span>
-                        <span>• Engenharia de IA</span>
-                        <span>• Análise e Ciência de Dados</span>
-                    </div>
                 </div>
 
                 <div class="education-item">
@@ -329,7 +317,6 @@
             </div>
         </section>
 
-
         <!-- Certifications -->
         <section class="section fade-in-section">
             <h2 class="section-title">Cursos e Certificações</h2>
@@ -340,13 +327,6 @@
                         <span class="certification-year">2025</span>
                     </div>
                     <p class="certification-provider">Data Science Academy</p>
-                    <ul class="certification-courses">
-                        <li>SQL Para Análise de Dados e Data Science</li>
-                        <li>Modelagem e Análise de Dados com Power BI</li>
-                        <li>Infraestrutura Como Código com Terraform, AWS, Azure e Databricks</li>
-                        <li>Modelagem, Implementação e Governança de Data Warehouses</li>
-                        <li>Engenharia de Dados com Airbyte, DBT e SQL</li>
-                    </ul>
                 </div>
 
                 <div class="certification-item">
@@ -355,26 +335,6 @@
                         <span class="certification-year">2025</span>
                     </div>
                     <p class="certification-provider">Data Science Academy</p>
-                    <ul class="certification-courses">
-                        <li>Arquitetura de Plataforma de Dados e Modern Data Stack</li>
-                        <li>Pipelines de ETL e Machine Learning com Apache Spark</li>
-                        <li>Orquestração de Fluxos de Dados com Apache Airflow</li>
-                        <li>Projeto e Implementação de Plataforma de Dados com Snowflake</li>
-                    </ul>
-                </div>
-
-                <div class="certification-item">
-                    <div class="certification-header">
-                        <h3 class="certification-title">Python, Bash and SQL Essentials for Data Engineering</h3>
-                        <span class="certification-year">2024</span>
-                    </div>
-                    <p class="certification-provider">Duke University | Coursera</p>
-                    <ul class="certification-courses">
-                        <li>Python and Pandas for Data Engineering</li>
-                        <li>Linux and Bash for Data Engineering</li>
-                        <li>Scripting with Python and SQL for Data Engineering</li>
-                        <li>Web Applications and Command-Line Tools for Data Engineering</li>
-                    </ul>
                 </div>
 
                 <div class="certification-item">
@@ -383,11 +343,6 @@
                         <span class="certification-year">2024</span>
                     </div>
                     <p class="certification-provider">IBM | Coursera</p>
-                    <ul class="certification-courses">
-                        <li>Establish DataOps</li>
-                        <li>Iterate DataOps</li>
-                        <li>Improve DataOps</li>
-                    </ul>
                 </div>
 
                 <div class="certification-item">
@@ -396,14 +351,6 @@
                         <span class="certification-year">Mar 2026</span>
                     </div>
                     <p class="certification-provider">Oracle</p>
-                    <ul class="certification-courses">
-                        <li>Fundamentos de computação em nuvem com Oracle Cloud Infrastructure (OCI)</li>
-                        <li>Conhecimento dos principais serviços (Compute, Storage, Networking, Database, AI, Analytics)
-                        </li>
-                        <li>Compreensão do modelo de segurança, identidade e conformidade do OCI</li>
-                        <li>Gestão de custos, faturamento e otimização de recursos em nuvem</li>
-                        <li>Conceitos de governança e administração em ambientes cloud</li>
-                    </ul>
                 </div>
 
                 <div class="certification-item">
@@ -412,43 +359,6 @@
                         <span class="certification-year">Nov 2025</span>
                     </div>
                     <p class="certification-provider">Astronomer</p>
-                    <ul class="certification-courses">
-                        <li>Orquestração de workflows com Apache Airflow</li>
-                        <li>Criação e otimização de DAGs eficientes e escaláveis</li>
-                        <li>Aplicação de boas práticas de DAG Authoring</li>
-                        <li>Implementação de pipelines ETL confiáveis</li>
-                        <li>Monitoramento e troubleshooting de workflows em produção</li>
-                    </ul>
-                </div>
-
-                <div class="certification-item">
-                    <div class="certification-header">
-                        <h3 class="certification-title">Apache Airflow Fundamentals</h3>
-                        <span class="certification-year">Jun 2025</span>
-                    </div>
-                    <p class="certification-provider">Astronomer</p>
-                    <ul class="certification-courses">
-                        <li>Fundamentos de orquestração de workflows com Apache Airflow</li>
-                        <li>Criação e gerenciamento de DAGs (Directed Acyclic Graphs)</li>
-                        <li>Desenvolvimento de pipelines de dados seguindo boas práticas</li>
-                        <li>Monitoramento e debugging de tarefas via interface do Airflow</li>
-                        <li>Compreensão do ciclo de vida das tarefas e componentes da arquitetura</li>
-                    </ul>
-                </div>
-
-                <div class="certification-item">
-                    <div class="certification-header">
-                        <h3 class="certification-title">Databricks Accreditation - Databricks Fundamentals</h3>
-                        <span class="certification-year">Out 2025</span>
-                    </div>
-                    <p class="certification-provider">Databricks</p>
-                    <ul class="certification-courses">
-                        <li>Fundamentos da Databricks Data Intelligence Platform</li>
-                        <li>Conceitos da arquitetura Lakehouse (unificação de dados e analytics)</li>
-                        <li>Gerenciamento de dados em plataformas modernas (Data Management Platforms)</li>
-                        <li>Processamento e análise de dados em ambiente distribuído</li>
-                        <li>Compreensão básica do ecossistema Databricks e seus componentes</li>
-                    </ul>
                 </div>
 
             </div>
