@@ -526,6 +526,33 @@ img {
   margin-top: 4px;
 }
 
+/* ========================================================
+   EFEITO DE HOVER PARA OS CARDS DO GRID DE PROJETOS E CASES
+======================================================== */
+
+/* Anima o container inteiro (incluindo as badges) para subir levemente */
+.project-grid td > div {
+  transition: transform 0.2s ease;
+}
+
+.project-grid td > div:hover {
+  transform: translateY(-4px);
+}
+
+/* Adiciona um brilho sutil à imagem ao passar o mouse */
+.project-grid td > div > a > img {
+  transition: filter 0.2s ease !important;
+}
+
+.project-grid td > div:hover > a > img {
+  filter: brightness(1.15) !important;
+}
+
+a, a:focus, a:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent; /* Remove o fundo azul ao tocar no celular */
+}
+
 
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
