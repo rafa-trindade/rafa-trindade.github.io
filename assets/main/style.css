@@ -491,15 +491,17 @@ img {
   margin-right: auto
 }
 
-
 .stats-strip {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 12px;
   width: 100%;
+  
+  margin-bottom: 15px;
 }
 
 .stat-card {
+  min-width: 0;
   background-color: #151B23;
   border: 1px solid #151B23;
   border-radius: 6px;
@@ -508,16 +510,13 @@ img {
   transition: border-color 0.2s ease;
 }
 
-.stat-card:hover {
-  border-color: #2B5482;
-}
-
 .stat-number {
   font-family: "SFMono-Regular", Consolas, monospace;
-  font-size: 26px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #58a6ff;
   line-height: 1.2;
+  overflow-wrap: break-word;
 }
 
 .stat-label {
@@ -525,6 +524,26 @@ img {
   color: #8b949e;
   margin-top: 4px;
 }
+
+.github-activity {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #151B23;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  box-sizing: border-box;
+}
+
+.github-activity img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
 /* ========================================================
    EFEITO DE HOVER PARA OS CARDS DO GRID DE PROJETOS E CASES
@@ -820,6 +839,32 @@ a, a:focus, a:active {
 
   .article-card-wrap:last-child {
     padding-bottom: 0;
+  }
+
+  .stats-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .stat-card {
+    padding: 14px 8px;
+  }
+
+  .stat-number {
+    font-size: 1.2rem;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+
+  .github-activity {
+    padding: 8px;
+  }
+
+  .github-activity img {
+    width: 100%;
+    max-width: 100%;
   }
 
 }
