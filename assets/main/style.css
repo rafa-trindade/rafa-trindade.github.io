@@ -512,7 +512,7 @@ img {
 
 .stat-number {
   font-family: "SFMono-Regular", Consolas, monospace;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #58a6ff;
   line-height: 1.2;
@@ -851,7 +851,7 @@ a, a:focus, a:active {
   }
 
   .stat-number {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
   }
 
   .stat-label {
