@@ -14,7 +14,7 @@
   overflow-y: auto;
   /* adiciona scroll interno se necessário */
   width: 380px;
-  background-color: #161b22;
+  background-color: #151B23;
   padding: 20px;
   flex-shrink: 0;
   display: flex;
@@ -113,7 +113,7 @@ a:hover {
 
 pre,
 code {
-  background-color: #141B23 !important;
+  background-color: #151B23 !important;
   color: #c9d1d9;
   border-radius: 6px;
   display: block;
@@ -126,7 +126,7 @@ h1>code.python {
 }
 
 .badge-container {
-  background-color: #141B23;
+  background-color: #151B23;
   border-radius: 6px;
   padding: 10px;
   display: flex;
@@ -141,7 +141,7 @@ img[src*="img.shields.io"] {
 
 /* Para o highlight.js não sobrescrever */
 .hljs {
-  background: #141B23 !important;
+  background: #151B23 !important;
   color: #c9d1d9;
 }
 
