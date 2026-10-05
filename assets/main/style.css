@@ -572,6 +572,55 @@ a, a:focus, a:active {
   -webkit-tap-highlight-color: transparent; /* Remove o fundo azul ao tocar no celular */
 }
 
+/* ===== TUDO EM UMA ÚNICA LINHA (1/6 + 1/6 + 4/6) ===== */
+.github-metrics-row {
+  display: flex;
+  flex-direction: row; /* Força tudo a ficar em uma linha horizontal */
+  width: 100%; /* Mesma largura da sua grade de projetos */
+  margin: 0 auto 20px auto;
+  gap: 12px; /* Espaço entre os 3 itens */
+  align-items: stretch; /* Estica as caixas para todas terem exatamente a mesma altura */
+}
+
+/* Cards menores (cada um ocupa 1/6, juntos formam 1/3 do total) */
+.github-metrics-row .metric-small {
+  flex: 1; 
+  background-color: #151B23;
+  border-radius: 6px;
+  border: 0px solid #30363d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  overflow: hidden;
+}
+
+/* Gráfico grande (ocupa 4/6, formando exatos 2/3 do total) */
+.github-metrics-row .metric-large {
+  flex: 2; 
+  background-color: #151B23;
+  border-radius: 6px;
+  border: 0px solid #30363d;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Ajuste das imagens para não espremerem */
+.github-metrics-row img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Efeito ao passar o mouse igual aos projetos */
+.github-metrics-row a:hover {
+  transform: translateY(-4px);
+  filter: brightness(1.15);
+}
+
 
 /* ===== Responsividade para telas pequenas ===== */
 @media (max-width: 900px) {
@@ -865,6 +914,19 @@ a, a:focus, a:active {
   .github-activity img {
     width: 100%;
     max-width: 100%;
+  }
+
+/* No celular, quebra a linha e empilha os 3 blocos */
+  .github-metrics-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .github-metrics-row .metric-small,
+  .github-metrics-row .metric-large {
+    flex: none; /* Desativa a proporção de 1/3 e 2/3 no celular */
+    width: 100%;
   }
 
 }
